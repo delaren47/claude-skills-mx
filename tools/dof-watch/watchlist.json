@@ -1,0 +1,118 @@
+{
+  "skills": {
+    "mexico-sat-tax": {
+      "agencies": [
+        "secretaria de hacienda y credito publico",
+        "servicio de administracion tributaria"
+      ],
+      "patterns": [
+        "resolucion miscelanea",
+        "codigo fiscal",
+        "ley del impuesto",
+        "\\bcfdi\\b",
+        "comprobantes? fiscal",
+        "\\bresico\\b",
+        "reglas? de caracter general.*fiscal",
+        "\\buma\\b",
+        "unidad de medida y actualizacion"
+      ]
+    },
+    "mexico-privacy-law": {
+      "agencies": [
+        "secretaria de salud",
+        "secretaria anticorrupcion y buen gobierno"
+      ],
+      "patterns": [
+        "datos personales",
+        "\\blfpdppp\\b",
+        "proteccion de datos",
+        "transparencia"
+      ]
+    },
+    "mexico-impi-trademark": {
+      "agencies": [
+        "instituto mexicano de la propiedad industrial",
+        "secretaria de economia"
+      ],
+      "patterns": [
+        "propiedad industrial",
+        "\\bimpi\\b",
+        "tarifa.*propiedad",
+        "\\bmarcas?\\b",
+        "instituto mexicano de la propiedad industrial"
+      ]
+    },
+    "mexico-profeco-consumer": {
+      "agencies": [
+        "procuraduria federal del consumidor",
+        "secretaria de economia",
+        "comision nacional para la proteccion y defensa de los usuarios de servicios financieros"
+      ],
+      "patterns": [
+        "proteccion al consumidor",
+        "\\bprofeco\\b",
+        "\\blfpc\\b",
+        "publicidad",
+        "montos.*multas",
+        "procuraduria federal del consumidor"
+      ]
+    },
+    "mexico-digital-contracts": {
+      "agencies": [
+        "secretaria de economia"
+      ],
+      "patterns": [
+        "codigo de comercio",
+        "nom-151",
+        "comercio electronico",
+        "firma electronica"
+      ]
+    },
+    "mexico-imss": {
+      "agencies": [
+        "instituto mexicano del seguro social",
+        "secretaria del trabajo y prevision social"
+      ],
+      "patterns": [
+        "seguro social",
+        "consejo tecnico",
+        "\\bimss\\b",
+        "cuotas obrero",
+        "salario base",
+        "continuacion voluntaria",
+        "instituto mexicano del seguro social",
+        "trabajadores independientes",
+        "persona trabajadora independiente",
+        "incorporacion voluntaria",
+        "trabajadoras del hogar",
+        "trabajadores del hogar",
+        "trabajo del hogar"
+      ]
+    },
+    "mexico-cofepris": {
+      "agencies": [
+        "secretaria de salud",
+        "comision federal para la proteccion contra riesgos sanitarios"
+      ],
+      "patterns": [
+        "\\bcofepris\\b",
+        "ley general de salud",
+        "publicidad.*salud",
+        "insumos para la salud",
+        "comision federal para la proteccion contra riesgos sanitarios"
+      ]
+    }
+  },
+  "exclude": [
+    "listado.*contribuyentes",
+    "presuncion.*operaciones inexistentes",
+    "convenio de coordinacion",
+    "convenio modificatorio",
+    "convenio especifico",
+    "licitacion",
+    "vacante",
+    "acuerdo de ministracion",
+    "avisos judiciales",
+    "declaratoria de vigencia"
+  ]
+}

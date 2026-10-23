@@ -1,7 +1,8 @@
+Verified 2026-10-23
+
 # SAT 2026 — Referencia Detallada
 
 **Fecha de investigación original:** 19 de febrero de 2026
-**Verificado contra fuentes primarias:** 19 de agosto de 2026 (LIVA · LISR · RIVA · CFF · RMF 2026 Anexos 5 y 8 · catálogos CFDI `catCFDI_V_4_20260806`)
 **Aplica a:** Persona física con actividad empresarial que opera un directorio de salud en línea
 
 ---
@@ -14,11 +15,13 @@ Introducido en 2022, diseñado para simplificar obligaciones de personas física
 
 **Requisitos para pertenecer:**
 - Ingresos anuales ≤ \$3,500,000 MXN
-- NO ser socio o accionista de persona moral
-- NO recibir ingresos por asimilados a salarios
-- NO tener ingresos por asociación en participación
+- NO ser socio o accionista de persona moral (la asociación en participación es persona moral para el ISR, art. 7 LISR); verificar con el contador
+- NO percibir los ingresos asimilados de las fracciones III a VI del art. 94 LISR (113-E, fracc. IV); salarios y otros asimilados sí son compatibles
+- NO ser parte relacionada en los términos del art. 90 de la LISR (LISR art. 113-E, fracc. I del párrafo de exclusiones; verificado 2026-10-23)
 - Tener e.firma activa
 - Buzón Tributario habilitado
+
+**Alcance de la opción:** la opción de tributar en RESICO se ejerce por la **totalidad** de las actividades empresariales, profesionales u otorgamiento del uso o goce temporal de bienes (RMF 2026 regla 3.13.3, verificado 2026-10-23). No se puede tener una parte de los ingresos en RESICO y otra en RAEP.
 
 **Tasas ISR RESICO 2026:**
 
@@ -45,7 +48,7 @@ Introducido en 2022, diseñado para simplificar obligaciones de personas física
 
 **Tarifa ISR 2026 (RAEP) — Pagos provisionales mensuales:**
 
-Fuente: **Anexo 8 de la RMF 2026, apartado A, tabla V** (DOF 28-12-2025). Actualizada con factor **1.1321** respecto a 2025 (inflación acumulada 13.21%; primera actualización desde 2023).
+Fuente: Anexo 8 de la RMF 2026, apartado B, fracción V (tarifa mensual, art. 96) (DOF 28-12-2025). Para pagos provisionales de RAEP (art. 106) se usa la tarifa acumulada del mes, apartado B, fracción VI. Actualizada respecto a la tarifa anterior con un factor ≈ **1.1321** (derivado del cociente entre la tabla 2026 y la anterior; el Anexo 8 RMF 2026 no publica el factor: *verificar antes de usar*).
 
 El ISR se calcula sobre la **utilidad fiscal** (ingresos − deducciones autorizadas), no sobre ingresos: se ubica el renglón, se resta el límite inferior, se aplica el % sobre excedente y se suma la cuota fija.
 
@@ -67,6 +70,8 @@ El ISR se calcula sobre la **utilidad fiscal** (ingresos − deducciones autoriz
 
 ### Comparativa (ejemplo)
 
+La opción RESICO se ejerce por la totalidad de las actividades (regla 3.13.3): este escenario ilustra la mecánica, no evalúa un negocio aislado de las demás actividades de la persona.
+
 **Escenario:** \$100,000 MXN/mes de ingresos por membresías, gastos operativos ~\$15,000/mes
 
 | Concepto | RESICO | RAEP |
@@ -85,7 +90,7 @@ El ISR se calcula sobre la **utilidad fiscal** (ingresos − deducciones autoriz
 | Tasa | Cuándo aplica |
 |------|---------------|
 | **16%** | Tasa general (todo el país excepto zona fronteriza) |
-| **8%** | Zona fronteriza norte (Tijuana, Cd. Juárez, etc.) |
+| **8%** | Zona fronteriza norte y sur (decretos DOF 31-12-2018 y 30-12-2020, vigentes hasta el 31-12-2026 por Decreto DOF 31-12-2025) |
 | **0%** | Exportación de servicios, alimentos básicos, medicinas |
 | **Exento** | Servicios médicos, educación, renta de casa habitación |
 
@@ -134,7 +139,7 @@ El ISR retenido se acredita contra el ISR provisional del mes. No es un gasto �
 | Aspecto | Detalle |
 |---------|---------|
 | Qué es | Informativa mensual de proveedores a quienes pagaste IVA |
-| Plazo | Día 17 del mes siguiente |
+| Plazo | **Durante el mes inmediato posterior** al periodo, a más tardar su último día (RMF 2026 regla 4.5.1, párr. segundo, personas físicas; verificado 2026-10-23). ⚠️ **No es el día 17** aunque LIVA art. 32 fracc. VIII diga "a más tardar el día 17": la regla da el mes completo. El 17 es el plazo de ISR provisional e IVA definitivo |
 | Quién la presenta | Todo contribuyente que paga IVA a proveedores (LIVA art. 32 fracc. VIII) |
 | Formato | A-29 (sistema del SAT) |
 | Multa por omisión | \$14,880 - \$29,750 (art. 82 fracc. XXVI; +100% por reincidencia) |
@@ -183,10 +188,20 @@ La asociación CP↔RFC del receptor se valida **desde la entrada de CFDI 4.0 (2
 
 **Para un directorio digital:** Usar método **PUE** (cobro inmediato vía pasarela de pago como Stripe). No se requiere complemento de pago en la mayoría de los casos.
 
+### CFDI global (público en general)
+
+| Regla | Detalle |
+|-------|---------|
+| Plazo de emisión | **A más tardar dentro de las 24 horas siguientes al cierre de las operaciones** del periodo diario, semanal, mensual o bimestral (RMF 2026 regla 2.7.1.21). Ya NO son "los primeros 5 días del mes siguiente" |
+| RESICO | El CFDI global por las operaciones del mes incluye **únicamente el monto total** de las operaciones del periodo (regla 2.7.1.21, párr. primero). Que RESICO no pueda usar periodicidad diaria o semanal no está escrito así en la regla: *verificar antes de usar* |
+| Umbral de \$100.00 | Si el cliente no pide comprobante, no hay obligación de expedirlo por operaciones con el público en general de importe inferior a \$100.00 (regla 2.7.1.21). Si lo pide, se expide |
+
+Texto de la regla 2.7.1.21 verificado 2026-10-23 contra la RMF 2026 publicada en DOF 28-12-2025 (minisitio de normatividad del SAT).
+
 ### Proceso de Cancelación (2026)
 
 1. Solo se puede cancelar con motivo justificado (código de cancelación)
-2. Si el receptor es persona moral, debe aceptar la cancelación en 3 días
+2. El receptor (persona física o moral) debe aceptar la cancelación, salvo los casos de la regla 2.7.1.35 RMF 2026
 3. Cancelar a más tardar en el mes en que se deba presentar la declaración anual del ejercicio de expedición (CFF art. 29-A, reformado DOF 07-11-2025). Un CFDI de 2026 se cancela hasta abril de 2027 (PF) / marzo de 2027 (PM)
 4. Multa por cancelación extemporánea: **5% - 10%** del monto
 
@@ -211,14 +226,14 @@ La reforma que importa para una PF que factura es la publicada en el **DOF el 7 
 | Ventana de cancelación de CFDI ampliada | CFF art. 29-A reformado | Se cancela hasta el mes de la declaración anual del ejercicio de expedición, no "el mismo ejercicio" | Un CFDI de 2026 se cancela hasta abril de 2027 |
 | CFDI falso como requisito del comprobante | CFF art. 29-A fracc. IX | Un CFDI que ampara operación inexistente pierde efectos fiscales | No amparar operaciones no realizadas |
 | Visita domiciliaria que **suspende la emisión** de CFDI | CFF art. 49 Bis | La suspensión opera desde la entrega de la orden y **no aplica el art. 17-H Bis** (sin procedimiento de aclaración previo) | Mantener domicilio y buzón localizables |
-| Determinación sin agotar el procedimiento | CFF art. 29-A Bis | Carril más rápido que el 69-B | — |
+| Determinación sin agotar el procedimiento | CFF art. 29-A Bis | La autoridad puede determinar sin agotar antes el procedimiento del art. 49 Bis cuando detecte incumplimiento del requisito del 29-A fracc. IX | — |
 | Nueva causal de cancelación de CSD | CFF art. 17-H fracc. XIII | CFDI falsos | — |
 | **Multa reducida para RESICO** por no emitir CFDI | CFF art. 84 fracc. IV inciso b) | \$1,910–\$3,800 en vez de \$22,300–\$127,530 | Verificar que el contador aplique el inciso correcto |
 | Infracción nueva: condicionar el CFDI a la CSF | CFF art. 83 fracc. IX / 84 fracc. VI | \$21,420–\$122,440 | Nunca exigir Constancia como condición para facturar |
 | Art. 113 Bis ampliado | CFF | Tipo penal por comercializar comprobantes falsos | — |
-| Tarifas ISR actualizadas (factor 1.1321) | Anexo 8 RMF 2026 | Se paga ligeramente menos ISR en RAEP | Automático en cálculo |
+| Tarifas ISR actualizadas (factor ≈ 1.1321, derivado del cociente entre la tabla 2026 y la anterior; el Anexo 8 no publica el factor: *verificar antes de usar*) | Anexo 8 RMF 2026 | Se paga ligeramente menos ISR en RAEP | Automático en cálculo |
 | Recargos suben a 2.07% mensual | LIF 2026 art. 11 fracc. I × CFF art. 21 | Pagar tarde es 40% más caro | No atrasar declaraciones |
-| Buzón Tributario: multa diferida a ene 2027 | RMF 2026 Cuarto Transitorio (art. 86-D) | No hay multa inmediata (\$3,850–\$11,540 desde 2027), **pero el CSD ya puede restringirse hoy** por la regla 2.2.4 fracc. VII | Activarlo ya |
+| Buzón Tributario: multa diferida a ene 2027 | RMF 2026 Cuarto Transitorio (art. 86-D) | No hay multa inmediata (\$3,850–\$11,540 desde 2027), pero el CSD puede restringirse temporalmente si los medios de contacto del buzón no son correctos o auténticos (CFF art. 17-H Bis, fracc. VIII; regla 2.2.7 RMF 2026) | Activarlo ya |
 
 ### Cambios que NO afectan (referencia)
 
@@ -248,6 +263,8 @@ La reforma que importa para una PF que factura es la publicada en el **DOF el 7 
 | Diciembre | 17 de enero (año siguiente) |
 
 **Si el día 17 cae en día inhábil, el plazo se extiende al siguiente día hábil.**
+
+⚠️ **La DIOT no sigue este calendario:** las personas físicas la presentan durante el mes inmediato posterior al periodo, a más tardar su último día (RMF 2026 regla 4.5.1, párr. segundo; verificado 2026-10-23), no el día 17.
 
 ### Anual
 

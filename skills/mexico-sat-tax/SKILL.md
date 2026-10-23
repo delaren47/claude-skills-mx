@@ -1,9 +1,11 @@
 ---
 name: mexico-sat-tax
 description: Use when creating invoices, configuring CFDI, pricing with IVA, handling tax obligations, or evaluating compliance with Mexican tax law (SAT) for persona física con actividad empresarial. Also use when adjusting pricing pages, membership fees, or B2B billing for Mexican clients.
-version: 1.1.0
-last-verified: 2026-08-19
-review-by: 2026-09-30
+metadata:
+  version: "1.1.1"
+  last-verified: "2026-10-23"
+  review-by: "2027-01-21"
+  cubre: "Facturación CFDI 4.0, cálculo de IVA/ISR, régimen RESICO vs actividad empresarial, retenciones, declaraciones y plazos ante el SAT para persona física con actividad empresarial."
 ---
 
 # Mexico SAT Tax Expert (Persona Física con Actividad Empresarial)
@@ -39,6 +41,8 @@ Guía de cumplimiento fiscal con el SAT para **persona física con actividad emp
 | Ejemplo: \$100K/mes ingreso | ~\$2,000 ISR (2.00%) | ~\$23,736 ISR (sin deducciones) |
 
 **Para un directorio digital:** RESICO es significativamente mejor mientras los ingresos estén debajo de \$3.5M MXN/año y los gastos deducibles sean bajos (hosting, dominio, software).
+
+**La opción es por la persona, no por el negocio:** quien opta por RESICO debe hacerlo por la totalidad de sus actividades empresariales, profesionales u otorgamiento del uso o goce temporal de bienes (RMF 2026 regla 3.13.3, verificado 2026-10-23). No se puede tener un negocio en RESICO y otro en RAEP bajo el mismo RFC, así que la evaluación se hace sobre todas las actividades de la persona física.
 
 ### Tasas RESICO 2026
 
@@ -103,7 +107,7 @@ Si el emisor está en RAEP por actividad empresarial, **no hay retención alguna
 | Versión | **4.0** (vigente) |
 | Clave de producto/servicio | **80141601** (Servicios de promoción de ventas) |
 | Unidad de medida | **E48** (Unidad de servicio) |
-| Uso del CFDI (receptor) | **G03** (Gastos en general) — ⚠️ G03 NO admite régimen receptor **616**; para público en general el uso es **S01** (causa típica de rechazo del PAC) |
+| Uso del CFDI (receptor) | **G03** (Gastos en general) — ⚠️ G03 NO admite régimen receptor **616**; para público en general el uso es **S01** (causa típica de rechazo del PAC; claves G03/616/S01: *verificar antes de usar* en el catálogo c_UsoCFDI del SAT) |
 | Método de pago | **PUE** (Pago en una sola exhibición) |
 | Forma de pago | Según medio: 01 (efectivo), 03 (transferencia), 04 (tarjeta crédito), 28 (tarjeta débito), 31 (intermediario pagos) |
 | Régimen fiscal emisor | **626** (RESICO) o **612** (RAEP) |
@@ -120,7 +124,12 @@ Cuando el cliente NO solicita factura con sus datos fiscales:
 | Régimen receptor | **616** (Sin obligaciones fiscales) |
 | CP receptor | CP del emisor |
 | Uso del CFDI | **S01** (Sin efectos fiscales) |
-| Periodicidad | **04** (Mensual) — emitir dentro de las **24 horas** siguientes al cierre del periodo (RMF 2026 regla 2.7.1.21; ya NO son 5 días) |
+| Periodicidad | **04** (Mensual) — emitir dentro de las **24 horas** siguientes al cierre de las operaciones del periodo (RMF 2026 regla 2.7.1.21; ya NO son los primeros 5 días del mes siguiente; verificado 2026-10-23 contra el texto DOF 28-12-2025) |
+
+**Dos reglas que suelen olvidarse** (RMF 2026 regla 2.7.1.21, verificado 2026-10-23):
+
+- **RESICO:** en el CFDI global por las operaciones del mes se incluye únicamente el monto total de las operaciones del periodo (párrafo primero). Que RESICO no pueda usar periodicidad diaria o semanal no está escrito así en la regla: *verificar antes de usar*.
+- **Operaciones menores a \$100.00:** si el cliente no pide comprobante, no hay obligación de expedirlo por operaciones con el público en general de importe inferior a \$100.00. Si lo pide, se expide.
 
 ### Cancelación de CFDI (Reglas 2026)
 
@@ -142,7 +151,9 @@ Cuando el cliente NO solicita factura con sus datos fiscales:
 | IVA definitiva | Día **17** del mes siguiente | Mensual |
 | Retenciones de IVA | Día **17** del mes siguiente | Mensual (si aplica) |
 | Declaración anual | **Abril** del año siguiente | Anual |
-| DIOT (informativa IVA) | Día **17** del mes siguiente | Mensual (⚠️ zona gris para RESICO PF — ver referencia) |
+| DIOT (informativa IVA) | **Durante el mes inmediato posterior** al periodo, a más tardar su último día (RMF 2026 regla 4.5.1, párr. segundo) | Mensual (⚠️ zona gris para RESICO PF — ver referencia) |
+
+> ⚠️ **La DIOT no vence el día 17.** LIVA art. 32 fracc. VIII fija "a más tardar el día 17 del mes inmediato posterior", pero la regla 4.5.1 de la RMF 2026 permite a las personas físicas presentarla durante todo el mes inmediato posterior (verificado 2026-10-23). El día 17 es el plazo de ISR provisional e IVA definitivo.
 
 > **Días adicionales por sexto dígito del RFC** (Decreto DOF 26-12-2013, art. 5.1): 1-2 → +1 día hábil · 3-4 → +2 · 5-6 → +3 · 7-8 → +4 · 9-0 → +5. Aplica automáticamente a personas físicas; no se solicita.
 
@@ -174,8 +185,10 @@ Si un proveedor de salud reside **fuera de México** y paga membresía:
 | Tasa IVA | **0%** (no 16%) |
 | Condición 1 | Servicio aprovechado en el extranjero |
 | Condición 2 | Se exporta **en la proporción** en que el servicio sea aprovechado en el extranjero (RIVA art. 59). LIVA art. 29 fracc. IV inciso c) lista "Publicidad" expresamente. |
-| Condición 3 | CFDI con Exportación = **04** (Definitiva con clave distinta a A1 o cuando no existe enajenación en términos de la Ley Aduanera) — la clave 02 es para mercancías con pedimento A1, NO para servicios |
-| Registro | Conservar comprobante de transferencia internacional |
+| Condición 3 | Clave del campo Exportación del CFDI para servicios: *verificar antes de usar* en el catálogo c_Exportacion del Anexo 20. La clave de exportación definitiva que esta fila daba antes no se confirmó en el catálogo, y hay una lectura del SAT en reunión con síndicos (2023-09-07) según la cual a los servicios les corresponde la clave "No aplica" y el campo no condiciona la tasa 0%; esa minuta no se abrió en esta revisión |
+| Condición 4 | El servicio debe caber en uno de los incisos de LIVA art. 29 fracc. IV (entre ellos asistencia técnica, publicidad, comisiones y mediaciones y servicios de tecnologías de la información). Un servicio que no está en la lista, como "consultoría" a secas, no se exporta a tasa 0%. El encuadre debe sostenerse en el contrato y en lo que realmente se presta (verificado 2026-10-23) |
+| Condición 5 | Prueba del cobro: se entiende, entre otros supuestos, que el servicio se aprovecha en el extranjero cuando lo contrata y paga un residente en el extranjero sin establecimiento en el país, con cheque nominativo o transferencia a cuentas del prestador en instituciones de crédito o casas de bolsa, y el pago proviene de cuentas en instituciones financieras ubicadas en el extranjero (RLIVA art. 58, párr. segundo; verificado 2026-10-23). Si un pago por plataforma de transferencias que llega como transferencia nacional cumple esta condición: *verificar antes de usar* |
+| Registro | Conservar comprobante de transferencia internacional. Si el cobro no es en una sola exhibición o se factura antes de cobrar: un CFDI por el valor total al realizarse la operación y un CFDI con complemento para recepción de pagos por cada pago (RMF 2026 regla 2.7.1.32). Tipo de cambio: el de adquisición de la divisa o, sin adquisición, el que Banco de México publica en el DOF el día anterior a aquél en que se causen las contribuciones (CFF art. 20; verificado 2026-10-23) |
 
 **Nota:** Para un directorio de salud en CDMX, la mayoría de los clientes serán proveedores de salud locales (residentes fiscales en México), por lo que la tasa estándar del 16% aplica en casi todos los casos.
 
@@ -183,21 +196,23 @@ Si un proveedor de salud reside **fuera de México** y paga membresía:
 
 | Infracción | Multa (Anexo 5 RMF 2026) |
 |------------|--------------------------|
-| No emitir CFDI — **RESICO (Secciones II y IV)** | **\$1,910 - \$3,800** por comprobante |
-| No emitir CFDI — régimen general | **\$22,300 - \$127,530** + clausura 3-15 días en reincidencia |
-| CFDI sin complementos | **\$450 - \$670** por documento |
+| No emitir CFDI — **RESICO (Secciones II y IV)** | **\$1,910 - \$3,800** por comprobante (CFF art. 84 fracc. IV inciso b) |
+| No emitir CFDI — régimen general | **\$22,300 - \$127,530** (CFF art. 84 fracc. IV inciso a) + clausura 3-15 días en reincidencia |
+| CFDI sin los complementos que exigen las reglas del SAT (no "errores" en general) | **\$450 - \$670** por comprobante (CFF art. 84 fracc. IV inciso d) |
 | Condicionar el CFDI a que exhiban CSF o cédula | **\$21,420 - \$122,440** (CFF 83-IX / 84-VI) |
-| Declaración fuera de plazo por medios electrónicos | **\$20,790 - \$41,590** por obligación + recargos 2.07%/mes |
-| No activar Buzón Tributario | Multa \$3,850-\$11,540 diferida a ene-2027, **pero el CSD sí puede restringirse hoy** (regla 2.2.4 fracc. VII) |
+| Declaración fuera de plazo por medios electrónicos | **\$20,790 - \$41,590** por obligación (CFF art. 82 fracc. I inciso d) + recargos 2.07%/mes |
+| No activar Buzón Tributario | Multa \$3,850-\$11,540 diferida a ene-2027, pero el CSD puede restringirse temporalmente si los medios de contacto del buzón no son correctos o auténticos (CFF art. 17-H Bis, fracc. VIII; regla 2.2.7 RMF 2026) |
 | Cancelación extemporánea CFDI | **5% - 10%** del monto del comprobante |
-| No presentar DIOT | **\$14,880 - \$29,750** (+100% por reincidencia) |
+| No presentar DIOT | **\$14,880 - \$29,750** (CFF art. 82 fracc. XXVI; +100% por reincidencia) |
+
+Fundamentos de los arts. 82 y 84 verificados 2026-10-23 contra el CFF vigente (LeyesBiblio).
 
 ## Checklist de Compliance
 
 ### Prioridad Alta (implementar primero)
 
 - [ ] Verificar régimen fiscal actual (¿RESICO o RAEP?)
-- [ ] Si aplica, solicitar cambio a RESICO (enero de cada ejercicio)
+- [ ] Si aplica, presentar aviso de actualización (ficha 28/CFF) para tributar en RESICO; una vez elegida la opción no se puede variar en el mismo ejercicio (regla 3.13.2 RMF 2026)
 - [ ] Configurar CFDI con clave 80141601 y datos correctos
 - [ ] Definir precios en página /join: mostrar sin IVA + leyenda "más IVA"
 - [ ] Activar Buzón Tributario (si no está activo)

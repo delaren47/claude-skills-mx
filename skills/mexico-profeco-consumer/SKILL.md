@@ -1,10 +1,12 @@
 ---
 name: mexico-profeco-consumer
 description: Use when writing marketing copy with claims like "verified" or "trusted", evaluating advertising legality, handling platform liability, managing subscription cancellation flows, or assessing consumer protection compliance under Mexican law (PROFECO/LFPC) for digital platforms.
-version: 1.1.0
-last-verified: 2026-08-19
-legal-basis: LFPC vigente DOF 12-12-2025 + Acuerdo montos DOF 23-12-2025
-review-by: 2026-09-30
+metadata:
+  version: "1.1.1"
+  last-verified: "2026-10-23"
+  legal-basis: "LFPC vigente DOF 12-12-2025 + Acuerdo montos DOF 23-12-2025"
+  review-by: "2027-01-21"
+  cubre: "Protección al consumidor bajo la LFPC: legalidad de claims publicitarios, reforma de suscripciones (Art. 76 Bis, dic 2025), cláusulas abusivas, responsabilidad de plataformas, multas."
 ---
 
 # Mexico PROFECO Consumer Protection (LFPC 2026)
@@ -30,12 +32,12 @@ Guía de cumplimiento con la **Ley Federal de Protección al Consumidor** (LFPC)
 
 ### Reforma Diciembre 2025 — YA VIGENTE
 
-La LFPC fue reformada el 12 de diciembre de 2025, agregando fracciones VIII y IX al Art. 76 Bis. **Aplica a toda suscripción digital con cobro recurrente.**
+La LFPC fue reformada el 12 de diciembre de 2025, agregando fracciones VIII y IX al Art. 76 Bis. **Aplica a toda suscripción digital con cobro recurrente vendida al consumidor final** (Art. 2 fr. I). En membresías vendidas a proveedores que las integran a sus servicios a terceros, cumplir estos requisitos es política comercial, no obligación de la LFPC.
 
 | Requisito nuevo | Artículo | Obligatorio |
 |-----------------|----------|-------------|
-| Informar monto, frecuencia y fecha de cobro **antes** de contratar | 76 Bis-VIII | **SÍ** |
-| Consentimiento expreso (checkbox no pre-marcado) | 76 Bis-VIII | **SÍ** |
+| Informar de forma clara, destacada y accesible si hay cobros automáticos recurrentes, su periodicidad, monto y fecha de cobro ("antes de contratar" es lectura de diseño, no letra de ley) | 76 Bis-VIII | **SÍ** |
+| Consentimiento expreso e informado (checkbox no pre-marcado = lectura de implementación, no texto legal) | 76 Bis-VIII | **SÍ** |
 | Notificar **5 días naturales antes** de cada renovación | 76 Bis-**VIII** | **SÍ**, sólo si el contrato prevé renovación automática |
 | Mecanismo de cancelación inmediata | 76 Bis-**IX** | **SÍ** |
 | Sin penalización si se cancela dentro de la ventana de aviso | 76 Bis-**VIII** | **SÍ** |
@@ -47,17 +49,17 @@ La LFPC fue reformada el 12 de diciembre de 2025, agregando fracciones VIII y IX
 
 Para compras en línea, el consumidor puede **revocar su consentimiento sin responsabilidad** dentro de los primeros **5 días hábiles**.
 
-**Implicación:** Los proveedores que contraten membresías en línea tienen 5 días hábiles para cancelar sin consecuencias. Debe comunicarse explícitamente.
+**Implicación:** El retracto protege al consumidor final. Un consultorio o clínica que compra la membresía para ofrecer sus servicios a terceros es consumidor sólo para quejas y conciliación (arts. 2 fr. I, 99 y 117; operaciones ≤ \$760,889.82 en 2026; personas morales sólo si son microempresas). Ofrecer retracto a proveedores es política comercial, no obligación de la LFPC.
 
 ### Publicidad — Reglas Clave
 
 | Principio | Artículo | Detalle |
 |-----------|----------|---------|
 | **No engañosa** | Art. 32 ¶1 | No inducir a error o confusión |
-| **No abusiva** | Art. 32 ¶1 | No explotar vulnerabilidades del consumidor |
+| **No abusiva** | Art. 32 ¶2 | Engañosa o abusiva = induce o puede inducir a error por la forma inexacta, falsa, exagerada, parcial, artificiosa o tendenciosa. La protección a grupos vulnerables en línea está en el Art. 76 Bis fr. VII |
 | **Comprobabilidad** | Art. 32 ¶1 | La publicidad debe ser veraz **y comprobable** — el deber de sustento nace del propio Art. 32, no del 35 |
 | **Facultades PROFECO** | Art. 35 | PROFECO puede ordenar suspender la publicidad, ordenar que se corrija, sancionar, y ordenar la publicación de la leyenda **"veracidad no comprobada"** |
-| **Avales y certificaciones** | Art. 32 ¶4 | Prohibido afirmar que algo está **avalado / aprobado / recomendado / certificado** por asociaciones, colegios o laboratorios sin documentación con evidencia objetiva que lo respalde |
+| **Avales y certificaciones** | Art. 32 ¶4 | Prohibido afirmar que algo está **avalado / aprobado / recomendado / certificado** por **sociedades o asociaciones profesionales** sin la documentación que lo soporte con evidencia científica, objetiva y fehaciente |
 
 ## Análisis de Claims de Marketing
 
@@ -96,7 +98,7 @@ Crear URL `/verification-process` que explique:
 
 ### Marco Legal
 
-México **NO tiene** "safe harbor" legislado internamente como EE.UU. (Section 230). Sin embargo, el **T-MEC Art. 19.17** (ya vigente desde julio 2023) ofrece protección para contenido de terceros.
+México **NO tiene** un "safe harbor" general legislado internamente como EE.UU. (Section 230); sí uno sectorial para derechos de autor (LFDA arts. 114 Septies–114 Octies, notice and takedown). Además, el **T-MEC Art. 19.17** (ya vigente desde julio 2023) ofrece protección para contenido de terceros.
 
 | Tipo de contenido | Protección T-MEC | Ejemplo |
 |--------------------|-----------------|---------|
@@ -123,7 +125,7 @@ Las siguientes cláusulas **no serán válidas y se tendrán por no puestas** en
 | Modificación unilateral del contrato o sustraerse de sus obligaciones (fr. I) | "We may change these terms at any time" |
 | Liberar al proveedor de su responsabilidad civil (fr. II) | "No nos hacemos responsables bajo ninguna circunstancia" |
 | Trasladar al consumidor o a un tercero la responsabilidad civil del proveedor (fr. III) | "El usuario indemnizará a la plataforma por cualquier reclamación derivada de nuestros propios contenidos" |
-| Someter al consumidor a tribunales extranjeros (fr. VI) | "Disputes governed by California law" |
+| Hacer renunciar al consumidor a la protección de la LFPC o someterlo a tribunales extranjeros (fr. VI) | "Disputes shall be resolved exclusively by the courts of California" |
 
 **En su lugar:** Usar disclaimers específicos que expliquen exactamente qué se verificó y qué no, con limitaciones razonables.
 
@@ -137,12 +139,12 @@ Las siguientes cláusulas **no serán válidas y se tendrán por no puestas** en
 | **COFEPRIS** | Publicidad de servicios de salud directos, riesgo sanitario | NO aplica (directorio, no proveedor médico) |
 | **SABG** | Protección de datos personales | SÍ aplica (ver skill mexico-privacy-law) |
 
-**IMPORTANTE:** PROFECO no tiene jurisdicción sobre servicios profesionales médicos directos, pero **SÍ** tiene jurisdicción sobre el servicio del directorio (publicidad, membresías, comercio electrónico).
+**IMPORTANTE:** La LFPC excluye los servicios profesionales que no sean de carácter mercantil (art. 5). Clínicas y hospitales privados que operan como negocio sí están bajo la LFPC. PROFECO **SÍ** tiene jurisdicción, además, sobre el servicio del directorio (publicidad, membresías, comercio electrónico).
 
 ### Protección a Extranjeros
 
 PROFECO tiene el departamento **C.A.R.E.** (Conciliation Services to Foreign Residents) que atiende quejas de extranjeros en México.
-- Email: extranjeros@profeco.gob.mx
+- Email: extranjeros@profeco.gob.mx (*verificar antes de usar*)
 - Jurisdicción: toda transacción en territorio mexicano, sin importar nacionalidad del consumidor
 
 ## Multas y Sanciones (2026)
@@ -152,15 +154,15 @@ Montos vigentes 2026 (Acuerdo DOF 23-12-2025, +3.8% por actualización inflacion
 | Infracción | Rango | Artículo |
 |------------|-------|----------|
 | Publicidad engañosa (Art. 32) — ordinaria | \$380.44 – \$1,217,423.72 | **Art. 126** (catch-all) |
-| Publicidad engañosa **grave** | \$228,266.96 – \$6,391,474.56 + clausura ≤ 90 días | Art. 128 Ter · clausura 128 Bis ¶1 |
+| Publicidad engañosa **grave** | \$228,266.96 – \$6,391,474.56 + clausura ≤ 90 días | Art. 128 Bis ¶1 (multa y clausura); gravedad: Art. 128 Ter fr. VI |
 | Grave + reincidencia | Hasta **10% de los ingresos brutos anuales** | Art. 128 Bis ¶2 |
 | Incumplir Art. 76 Bis (suscripciones) | \$1,093.02 – \$4,274,960.73 | **Art. 128** |
-| Infracciones del Art. 127 | \$760.89 – \$2,434,847.42 | Art. 127 |
+| Cláusulas abusivas (Art. 90) y desacato a órdenes sobre publicidad (Art. 35), entre otros | \$760.89 – \$2,434,847.42 | Art. 127 |
 | Reincidencia | Hasta el **doble** de la multa + arresto ≤ 36 h | Art. 129 |
-| Incumplimiento persistente | Hasta \$15,217.79 **por día**, máx. 180 días | **Art. 25 fr. IV** |
+| Medida de apremio: desobedecer un mandato de PROFECO (previo apercibimiento) | Hasta \$15,217.79 **por día**, máx. 180 días | **Art. 25 fr. IV** |
 | Tope agregado por un mismo hecho | \$12,782,949.06 | Art. 133 ¶2 |
 
-**Precedente:** PROFECO sancionó a Uber, Easy Taxi y Cabify en **julio de 2018** por cláusulas abusivas y publicidad engañosa — **\$6.484 millones de pesos en total** (Uber \$3,974,000 · Easy Taxi ≈ \$1,810,000 · Cabify \$700,000).
+**Precedente:** PROFECO sancionó a Uber, Easy Taxi y Cabify en **julio de 2018** por cláusulas abusivas y publicidad engañosa — **\$6.484 millones de pesos en total** (Uber \$3,974,000 · Easy Taxi ≈ \$1,810,000 · Cabify \$700,000). Fecha y desglose: *verificar antes de usar*.
 
 ## Distintivo Digital PROFECO
 
@@ -169,8 +171,8 @@ Sello voluntario de confianza para comercio electrónico.
 | Aspecto | Detalle |
 |---------|---------|
 | Costo | Gratuito (solo cumplir requisitos) |
-| Requisitos | 1 año de antigüedad, SAT registrado, HTTPS, contrato de adhesión **registrado** ante PROFECO, **sin adeudos** con la Procuraduría |
-| Resolución | 30 días naturales desde la solicitud |
+| Requisitos | 1 año de antigüedad, SAT registrado, HTTPS, contrato de adhesión **registrado** ante PROFECO, **sin adeudos** con la Procuraduría (*verificar antes de usar*) |
+| Resolución | 30 días naturales desde la solicitud (*verificar antes de usar*) |
 | Validez | "Anual, renovable" **no confirmada** en fuente oficial — verificar antes de afirmarlo |
 | Beneficio | Credibilidad + relación positiva con PROFECO |
 | URL | distintivodigital.profeco.gob.mx |
@@ -179,6 +181,8 @@ Sello voluntario de confianza para comercio electrónico.
 
 ### Prioridad Inmediata (antes de monetizar)
 
+*Alcance:* los puntos de Art. 76 Bis y de retracto son obligatorios frente al consumidor final (Art. 2 fr. I); en membresías vendidas a proveedores son política comercial.
+
 - [ ] Implementar cancelación inmediata de membresías en línea (Art. 76 Bis-IX)
 - [ ] Sistema de notificación 5 días antes de renovación automática
 - [ ] Checkout con monto + frecuencia + fecha de cobro claros
@@ -186,7 +190,7 @@ Sello voluntario de confianza para comercio electrónico.
 - [ ] Cambiar "Verified" por **"Credential-Checked"** en todo el sitio (terminología canónica vigente; "Cédula-Verified" fue redacción intermedia ya superada)
 - [ ] Agregar disclaimers en badges y páginas de verificación
 - [ ] Crear página `/verification-process` explicativa
-- [ ] Comunicar derecho de retracto (5 días hábiles) en T&C
+- [ ] Comunicar derecho de retracto (5 días hábiles) en T&C para consumidores finales; para proveedores que compran membresías, sólo si se ofrece como política
 
 ### Prioridad Media
 
@@ -210,10 +214,10 @@ Sello voluntario de confianza para comercio electrónico.
 | Usar "verified" sin definir qué se verificó | Publicidad engañosa ante PROFECO | Especificar: **"Credential-Checked against Mexico's federal SEP registry"** |
 | Etiquetar como "no verificado" a quien queda fuera del estándar | Afirmación falsa + riesgo de daño moral al tercero | **"Fuera de alcance"**; nunca implicar que hubo un check fallido |
 | Exención total de responsabilidad en T&C | Cláusula abusiva = nula automáticamente | Disclaimers específicos y limitados |
-| Sin botón de cancelación en línea | Violación Art. 76 Bis-IX (dic 2025) | "Un clic para cancelar" |
+| Sin botón de cancelación en línea | Violación Art. 76 Bis-IX (dic 2025) | Mecanismo de cancelación inmediata |
 | Sin aviso previo a renovación automática | Violación Art. 76 Bis-**VIII** | Email **5 días naturales** antes |
-| Jurisdicción "California law" en T&C | Cláusula abusiva bajo LFPC | Jurisdicción Ciudad de México |
-| Claims superlativos sin sustento | Multa hasta 10% de ingresos brutos | Evitar "most trusted", "the only", "best" |
+| Tribunales de California como foro exclusivo en T&C | Cláusula abusiva bajo LFPC (Art. 90 fr. VI) | Jurisdicción Ciudad de México |
+| Claims superlativos sin sustento | Multa Art. 126 (hasta \$1,217,423.72); 10% sólo si es particularmente grave y hay reincidencia | Evitar "most trusted", "the only", "best" |
 | Ignorar quejas de extranjeros | PROFECO C.A.R.E. puede intervenir | Mecanismo de quejas en inglés y español |
 
 ## Referencia Detallada

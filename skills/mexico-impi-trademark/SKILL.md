@@ -1,9 +1,11 @@
 ---
 name: mexico-impi-trademark
 description: "Use when evaluating trademark registration, searching IMPI database (MARCANET), analyzing brand conflicts, assessing domain vs trademark disputes, or planning IP protection strategy under Mexican law (LFPPI/IMPI)."
-version: 2.0.0
-last-verified: 2026-08-19
-review-by: 2026-11-30
+metadata:
+  version: "2.0.1"
+  last-verified: "2026-10-23"
+  review-by: "2027-01-21"
+  cubre: "Registro de marcas ante el IMPI bajo la LFPPI: búsqueda en MARCANET, distintividad, oposiciones, declaración de uso, disputas de dominio (UDRP/LDRP), regla first-to-file."
 ---
 
 # Mexico Trademark & Industrial Property Expert (LFPPI — ultima reforma DOF 03-04-2026)
@@ -14,8 +16,8 @@ Guia de proteccion de propiedad industrial bajo la **Ley Federal de Proteccion a
 
 **Principio fundamental:** Mexico es **first-to-file** — los derechos de marca se adquieren por registro, NO por uso previo. Quien registra primero tiene el derecho.
 
-**Marco vigente (verificado 19-ago-2026):**
-- **LFPPI reformada — DOF 03-04-2026.** Ya es ley vigente, no iniciativa. Amplia los signos registrables (Art. 172, ahora 11 fracciones: posicion, movimiento, multimedia), agrega la fraccion XXIII al Art. 173 (patrimonio cultural de pueblos indigenas y afromexicanas), incorpora la protesta de decir verdad sobre la oferta (Art. 178), fija plazo maximo de resolucion de 5 meses (Arts. 229 y 229 Bis) y reordena la suspension de tramite (Art. 228).
+**Marco vigente (verificado 23-oct-2026):**
+- **LFPPI reformada — DOF 03-04-2026.** Ya es ley vigente, no iniciativa. Amplia los signos registrables (Art. 172, ahora 11 fracciones: posicion, movimiento, multimedia), agrega la fraccion XXIII al Art. 173 (patrimonio cultural de pueblos indigenas y afromexicanas) y la fracción I Bis (falta de distintividad), reforma el segundo párrafo del Art. 178 (protesta de decir verdad, ahora también al renovar), fija plazo maximo de resolucion de 5 meses (Arts. 229 y 229 Bis) y reordena la suspension de tramite (Art. 228).
 - **Nuevo Reglamento de la LFPPI — DOF 28-04-2026, en vigor 22-07-2026.** Sustituye al Reglamento de 1994; pasa de 79 a 202 articulos y formaliza expediente, notificaciones y procedimientos electronicos.
 
 **DISCLAIMER:** Esta guia NO constituye asesoria legal. Consultar un abogado especializado en propiedad industrial para validar la estrategia de registro.
@@ -49,12 +51,14 @@ Guia de proteccion de propiedad industrial bajo la **Ley Federal de Proteccion a
 | X | Multimedia (**adicionada DOF 03-04-2026**) | Video + sonido combinados |
 | XI | Combinacion de los anteriores (marca mixta) | Logo + "MarcaEjemplo" |
 
-### Tarifas IMPI (Acuerdo DOF 15-03-2024, vigente — montos pre-IVA, verificado 19-ago-2026)
+### Tarifas IMPI (Acuerdo por el que se da a conocer la tarifa…, DOF 23-08-1995; última modificación DOF 15-03-2024, nota SIDOF 5720420; sin modificaciones en DOF al 23-10-2026)
+
+Montos pre-IVA; fuente de cada monto en la referencia.
 
 | Articulo | Concepto (texto del Acuerdo) | Tarifa MXN |
 |----------|------------------------------|-----------|
 | 14 a | Estudio de una solicitud nacional para el registro de una marca, aviso comercial o nombre comercial hasta la conclusion del tramite o, en su caso, la expedicion del titulo | \$2,695.18 |
-| 14 a (Marca en Linea) | Misma solicitud presentada por el Sistema Marca en Linea — **descuento 10%** (Disposicion NOVENA) | \$2,425.66 |
+| 14 a (Marca en Linea) | Misma solicitud presentada por el Sistema Marca en Linea — **descuento 10%** (Disposicion NOVENA; *verificar antes de usar*: su nota DOF no se ha localizado) | \$2,425.66 |
 | 14 b | Estudio de la oposicion a una solicitud de registro de marca, aviso o nombre comercial, por cada uno | \$3,704.09 |
 | 14 c | Renovacion de un registro de marca, aviso comercial o nombre comercial nacional, por cada clase | \$2,597.77 |
 | 14 d | Declaracion de uso de marca | \$985.67 |
@@ -71,9 +75,11 @@ Guia de proteccion de propiedad industrial bajo la **Ley Federal de Proteccion a
 
 **Notas:**
 - Montos **pre-IVA**. El descuento del 10% aplica **solo** al articulo 14 a (Disposicion NOVENA del Acuerdo).
+- DÉCIMA PRIMERA (DOF 15-03-2024, nota SIDOF 5720420): reducción de 50% en arts. 14 a–14 d para marcas colectivas o de certificación de asociaciones cuyos integrantes pertenezcan en su totalidad a pueblos o comunidades indígenas o afromexicanas, con constancia de pertenencia.
 - Las campanas de precio diferencial tipo "Marcas para el Bienestar" (descuentos de hasta 90%) operan por convocatoria con ventana limitada. **A 19-ago-2026 no hay ventana abierta** — verificar antes de asumir el descuento.
 - Para USD, convertir al tipo de cambio del dia; no publicar una conversion sin fecha.
-- Fuente: https://www.gob.mx/impi/acciones-y-programas/servicios-que-ofrece-el-impi-tarifas-215115
+- Fuente de cada monto (nota SIDOF en https://sidof.segob.gob.mx/dof/sidof/notas/nota/<nota>): 14 a–14 d: DOF 07-08-2018, nota 5534056 · 16 y 29: DOF 06-01-2021, nota 5609525 · 31: DOF 30-11-2015, nota 5417972 · 32: DOF 26-04-2018, nota 5520840 · 34: DOF 12-05-2023, nota 5688604.
+- Consulta (no fuente primaria): https://www.gob.mx/impi/acciones-y-programas/servicios-que-ofrece-el-impi-tarifas-215115
 
 ### Cronograma de registro (plazos legales, Arts. 221/225/229/229 Bis)
 
@@ -85,12 +91,14 @@ Guia de proteccion de propiedad industrial bajo la **Ley Federal de Proteccion a
 | **Periodo de oposicion** | **1 mes improrrogable** desde que surte efectos la publicacion | Art. 221 |
 | Examen de forma | Al concluir el mes de oposicion | Art. 225 |
 | Examen de fondo | Finalizado el examen de forma | Art. 225 |
-| Respuesta a requerimientos, oposiciones o impedimentos | 2 meses (prorrogables conforme al Art. 226) | Art. 225 |
+| Respuesta a requerimientos, oposiciones o impedimentos | 2 meses (Art. 225) + plazo adicional automático de 2 meses sin solicitud, pagando la tarifa del art. 31 por cada mes (\$154.00) (Art. 226); si no se contesta, abandono | Arts. 225 y 226 |
 | Alegatos | 5 dias | Art. 229 |
-| **Resolucion — via con oposicion o requerimientos** | **No podra exceder de 5 meses** tras el plazo de 2 meses | Art. 229 |
+| **Resolucion — via con oposicion o requerimientos** | **No podra exceder de 5 meses** contados al concluir el plazo de 5 días de alegatos | Art. 229 |
 | **Resolucion — sin oposicion ni requerimientos** | **5 meses maximo contados desde la fecha de presentacion** | Art. 229 Bis (adicionado DOF 03-04-2026) |
 
 > La publicacion en Gaceta ocurre **al inicio** del tramite (≤10 dias), no despues del examen de forma. Cualquier cronograma que ponga la Gaceta a los ~3 meses esta invertido.
+
+> *Verificar antes de usar* cualquier plazo de esta tabla: los acuerdos del IMPI DOF 28-09-2026 (notas SIDOF 5799712 y 5799713, simplificación administrativa de solicitudes de registro de marca), DOF 11-03-2026 (nota 5781994) y DOF 04-09-2026 (nota 5797962), estos dos sobre plazos de respuesta, se publicaron y no se leyeron en la auditoría del 23-10-2026.
 
 ### Clases de Niza relevantes para un directorio (ejemplo) — edicion vigente **NCL(13-2026)**
 
@@ -114,11 +122,12 @@ Guia de proteccion de propiedad industrial bajo la **Ley Federal de Proteccion a
 | **Descriptiva** | No (salvo distintividad adquirida) | "English Doctors Mexico" |
 | **Generica** | Nunca | "Directorio Medico" |
 
-### Art. 173 — causales de irregistrabilidad (23 fracciones, mezcla absolutas y relativas)
+### Art. 173 — causales de irregistrabilidad (24 fracciones: I a XXIII más I Bis; mezcla absolutas y relativas)
 
 | Fraccion | Causal | Tipo |
 |----------|--------|------|
-| I / I Bis | Nombres tecnicos o de uso comun, genericos, o carentes de distintividad | Absoluta |
+| I | Nombres tecnicos o de uso comun, genericos o usuales | Absoluta |
+| I Bis | Palabras, denominaciones, frases, sonidos o elementos figurativos que carezcan de distintividad (**adicionada DOF 03-04-2026**) | Absoluta |
 | II | Formas 3D de dominio publico, de uso comun, usuales o funcionales | Absoluta |
 | III | Hologramas de dominio publico o sin distintividad | Absoluta |
 | **IV** | **Signos descriptivos** de los productos o servicios (especie, calidad, cantidad, composicion, destino, valor, lugar de origen, epoca de produccion) | Absoluta |
@@ -143,7 +152,7 @@ Guia de proteccion de propiedad industrial bajo la **Ley Federal de Proteccion a
 | **XXIII** | **Patrimonio cultural, conocimientos y expresiones culturales tradicionales de pueblos y comunidades indigenas y afromexicanas** (**adicionada DOF 03-04-2026**) | Absoluta |
 
 **Parrafos finales del Art. 173 (criticos):**
-- **Distintividad adquirida:** las fracciones **I, II, III, IV, V y VI** no aplican si, por el uso comercial, el signo adquirio caracter distintivo en territorio nacional (conforme al Reglamento).
+- **Distintividad adquirida:** las fracciones **I, II, III, IV, V y VI** no aplican si, por el uso comercial, el signo adquirio caracter distintivo en territorio nacional (conforme al Reglamento). La fracción I Bis no está en esa lista.
 - **Consentimiento expreso ("coexistencia"):** las fracciones **XVIII, XIX y XX** no aplican cuando se exhibe el **consentimiento expreso y por escrito** — **Art. 173, penultimo parrafo**, NO el Art. 175.
 - Para las fracciones XVIII y XX quedan incluidos los registros y publicaciones del Art. 237.
 

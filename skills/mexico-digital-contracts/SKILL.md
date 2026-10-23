@@ -1,9 +1,11 @@
 ---
 name: mexico-digital-contracts
 description: Use when writing terms and conditions, membership agreements, subscription contracts, or evaluating enforceability of digital contract clauses under Mexican law. Also use when handling user-generated content policies, claimable listings, dispute resolution, or bilingual T&C for platforms operating in Mexico.
-version: 1.1.0
-last-verified: 2026-08-19
-review-by: 2026-11-30
+metadata:
+  version: "1.1.1"
+  last-verified: "2026-10-23"
+  review-by: "2027-01-21"
+  cubre: "Términos y condiciones, acuerdos de membresía y contratos de adhesión bajo la LFPC y el Código de Comercio: cláusulas nulas, clickwrap, contenido de usuarios, jurisdicción, conservación (NOM-151)."
 ---
 
 # Mexico Digital Contracts (T&C, Membresías, Contratos de Adhesión)
@@ -48,7 +50,7 @@ Guía para la redacción y cumplimiento de **contratos digitales** (términos y 
 
 ### ¿Qué es un contrato de adhesión?
 
-Contrato cuyas cláusulas son redactadas **unilateralmente** por el proveedor, sin que el consumidor pueda negociar. Los T&C de cualquier plataforma digital son contratos de adhesión.
+Contrato cuyas cláusulas son redactadas **unilateralmente** por el proveedor, sin que el consumidor pueda negociar. Los T&C son contrato de adhesión cuando el proveedor los elabora unilateralmente en formatos uniformes (Art. 85 LFPC).
 
 ### Cláusulas Nulas de Pleno Derecho (Art. 90 LFPC)
 
@@ -81,7 +83,7 @@ Fuera del Art. 90 siguen aplicando:
 | ¿Obligatorio? | Sólo si una NOM sujeta ese tipo de contrato a registro previo (Art. 86). Para un directorio digital: probablemente NO |
 | ¿Recomendable? | **SÍ** — inscripción voluntaria (Art. 88); PROFECO revisa cláusulas, genera confianza |
 | Costo (RPCA, consultado 19-ago-2026) | ~\$2,339.75 MXN si el contrato **no** se apega a un modelo tipo · ~\$1,243.78 MXN si se adopta un **contrato tipo**. Es un **aprovechamiento con IVA incluido**, NO un derecho de la LFD (su art. 80 está derogado). ⚠️ El FAQ del RCAL publica cifras distintas — reverificar antes de presupuestar |
-| Plazo de resolución | 30 días hábiles; transcurrido el plazo sin resolución, el modelo se entiende aprobado (Art. 87) |
+| Plazo de resolución | Registro previo obligatorio: 30 días hábiles con afirmativa ficta (Art. 87). Inscripción voluntaria (Art. 88): la ley no fija plazo ni afirmativa ficta. |
 | Beneficio | Cláusulas revisadas por PROFECO antes de usarse |
 
 ## Estructura Recomendada de T&C
@@ -138,7 +140,9 @@ Fuera del Art. 90 siguen aplicando:
 
 ## Suscripciones/Membresías — Requisitos Completos
 
-### Flujo de Contratación Obligatorio (Art. 76 Bis)
+### Flujo de Contratación Recomendado (Art. 76 Bis)
+
+Flujo recomendado. Lo obligatorio (Art. 76 Bis fr. V y VIII): informar términos, costos, periodicidad, monto y fecha de cobros recurrentes, y obtener consentimiento expreso e informado. Checkbox no pre-marcado, desglose de IVA y email de confirmación son práctica, no texto de la ley.
 
 ```
 1. Usuario selecciona plan
@@ -187,7 +191,7 @@ La misma fracción VIII, 1er párrafo, obliga a informar "de forma clara, destac
 
 | Fuente de datos | Base legal | Consentimiento |
 |-----------------|-----------|----------------|
-| Cédula Profesional (SEP) | Fuente de acceso público | **No requerido** |
+| Cédula Profesional (SEP) | Fuente de acceso público (*verificar antes de usar*: que el RNP califique como fuente de acceso público) | **No requerido** |
 | Nombre, número de cédula, especialidad | Registro Nacional de Profesionistas | **No requerido** |
 | Teléfono, dirección, fotos | Datos del proveedor | **SÍ requerido** |
 | Información de otras fuentes públicas | Verificar origen lícito | Caso por caso |
@@ -207,7 +211,7 @@ momento contactando a [email].
 El proveedor **siempre** tiene derecho a solicitar la eliminación de su perfil (derechos ARCO bajo LFPDPPP). Incluir proceso claro:
 1. Solicitud por email
 2. Verificación de identidad
-3. Eliminación en máximo 20 días hábiles
+3. Respuesta en máximo 20 días hábiles; si procede, eliminación efectiva dentro de los 15 días hábiles siguientes (LFPDPPP art. 31; art. 2: "Días: Días hábiles")
 4. Confirmación por email
 
 ## Contenido Generado por Usuarios (Reseñas)
@@ -260,15 +264,15 @@ El consumidor puede presentar quejas ante PROFECO.
 
 ## Conservación de Documentos (CCom art. 49 + NOM-151-SCFI-2016)
 
-**El plazo lo fija el Código de Comercio, no la NOM.** CCom art. 49 obliga a conservar por **10 años** los documentos de la actividad mercantil. La NOM-151-SCFI-2016 aporta el **valor probatorio** de la conservación (constancia, hash, timestamping) — no un plazo.
+**El plazo lo fija el Código de Comercio, no la NOM.** CCom art. 49 obliga a conservar por un mínimo de **10 años** los originales de cartas, telegramas, mensajes de datos o cualesquiera otros documentos en que se consignen contratos, convenios o compromisos que den nacimiento a derechos y obligaciones. La NOM-151-SCFI-2016 aporta el **valor probatorio** de la conservación (constancia, hash, timestamping), no la obligación de conservar. Su numeral A.8.4.1 fija una vigencia mínima de 10 años para la constancia de conservación, prorrogable.
 
 | Documento | Plazo mínimo | Base del plazo | Formato |
 |-----------|-------------|---------|---------|
 | T&C aceptados (con timestamp) | **10 años** | CCom art. 49 |  Digital con hash (NOM-151) |
 | Confirmaciones de compra | **10 años** | CCom art. 49 | Digital |
-| CFDIs | **5 años** (CFF) | XML + PDF |
-| Comunicaciones contractuales | **5 años** | Digital |
-| Consentimientos ARCO | **5 años** post-relación | Digital |
+| CFDIs | **5 años** | CFF art. 30 | XML + PDF |
+| Comunicaciones que consignen contratos o compromisos | **10 años** | CCom art. 49 | Digital |
+| Datos personales cancelados (ARCO) | Bloqueo por el plazo de prescripción de las acciones de la relación jurídica, luego supresión | LFPDPPP (cancelación ARCO) | Digital |
 
 ## Checklist de Implementación
 
@@ -287,7 +291,7 @@ El consumidor puede presentar quejas ante PROFECO.
 ### Prioridad Media
 
 - [ ] Política de reseñas documentada
-- [ ] Proceso de eliminación de listados no reclamados (20 días hábiles)
+- [ ] Proceso de eliminación de listados no reclamados (respuesta en 20 días hábiles; eliminación efectiva dentro de los 15 días hábiles siguientes, LFPDPPP art. 31)
 - [ ] Cláusula de base legal para datos de Cédula Profesional
 - [ ] Política de modificación de T&C (aviso 30 días por email)
 - [ ] Evaluar registro voluntario de contrato de adhesión ante PROFECO

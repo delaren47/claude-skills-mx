@@ -1,0 +1,6 @@
+{
+  "name": "claude-skills-mx",
+  "description": "Claude Code skills on Mexican regulatory law: SAT, LFPDPPP, IMPI, PROFECO, digital contracts, COFEPRIS, IMSS, and a method for verifying legal claims against primary sources.",
+  "owner": { "name": "Alfredo del Arenal" },
+  "plugins": [ { "name": "mexico-legal-skills", "source": "./" } ]
+}

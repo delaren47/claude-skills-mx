@@ -1,7 +1,8 @@
+Verified 2026-10-23
+
 # Contratos Digitales México 2026 — Referencia Detallada
 
-**Fecha de investigación:** 19 de febrero de 2026
-**Reverificado contra fuentes primarias:** 19 de agosto de 2026 (LFPC texto vigente DOF 12-12-2025)
+**Reverificado contra fuentes primarias:** 23 de octubre de 2026 (LFPC texto vigente DOF 12-12-2025; Acuerdo de montos DOF 23-12-2025)
 **Aplica a:** Plataforma de directorio de salud en línea
 
 ---
@@ -39,7 +40,7 @@ Una cláusula de sumisión a **jurisdicción extranjera** en los T&C de una plat
 | **Clickwrap** (base de validez) | CCom Art. **93, párr. 2** + Art. **90** + CCF **1803 fr. I** | El clic en "Acepto" es consentimiento expreso por medios electrónicos. ⚠️ La **LFEA** (firma electrónica avanzada) **no aplica** a T&C entre particulares — regula la firma ante dependencias del Estado |
 | **Momento de perfeccionamiento** | CCom Art. **80** | El contrato se perfecciona **al recibirse la aceptación**, no con el acuse de recibo |
 | Acuse de recibo | CCom Art. **92** | Regula el acuse cuando se pacta — no condiciona el perfeccionamiento |
-| Lugar de emisión/recepción | CCom Art. **94** | Domicilio del emisor / receptor |
+| Lugar de emisión/recepción | CCom Art. **94** | Establecimiento del emisor / del destinatario (salvo pacto); sin establecimiento, residencia habitual |
 | Conservación | CCom Art. **49** (10 años) + NOM-151 (valor probatorio) | Mantener el mensaje en formato original, íntegro y accesible |
 
 ### Consentimiento Electrónico
@@ -130,9 +131,9 @@ Artículos vecinos que sí operan sobre el contrato:
 | Costo (RPCA, consultado 19-ago-2026) | ~\$2,339.75 MXN si el contrato **no** se apega a un modelo tipo · ~\$1,243.78 MXN si se adopta un **contrato tipo** |
 | Naturaleza del cobro | **Aprovechamiento con IVA incluido**, NO un derecho de la Ley Federal de Derechos (su art. 80 está **derogado**). ⚠️ El FAQ del RCAL publica cifras distintas a las del RPCA — reverificar en la ventanilla antes de presupuestar |
 | Proceso | Presentar el modelo de contrato ante PROFECO para revisión |
-| Plazo de resolución | **30 días hábiles**; transcurrido el plazo sin resolución, el modelo se entiende aprobado y PROFECO debe registrarlo (Art. 87) |
+| Plazo de resolución | Registro previo obligatorio: **30 días hábiles** con afirmativa ficta (Art. 87). Inscripción voluntaria (Art. 88): la ley no fija plazo ni afirmativa ficta. |
 | Beneficio | PROFECO revisa y aprueba cláusulas antes de su uso |
-| Renovación | Al modificar las obligaciones o condiciones hay que solicitar la modificación del registro (Art. 87) |
+| Renovación | Para contratos con registro previo obligatorio, al modificar las obligaciones o condiciones hay que solicitar la modificación del registro (Art. 87). Para inscripción voluntaria la ley no lo regula. |
 
 ---
 
@@ -197,7 +198,7 @@ La COFEPRIS obliga a los médicos a exhibir su Cédula Profesional en su consult
 
 El proveedor **siempre** puede solicitar eliminación de su perfil bajo derechos ARCO (LFPDPPP 2025, **Art. 31**):
 - Plazo de respuesta: **20 días hábiles**
-- **Prórroga: una sola vez**, por 20 días hábiles más, cuando esté justificada y se notifique al titular (Art. 31)
+- **Prórroga: una sola vez**, por un periodo igual, siempre que lo justifiquen las circunstancias del caso (Art. 31)
 - Implementación posterior a la respuesta: 15 días hábiles
 - Vía: email designado para solicitudes ARCO
 
@@ -277,7 +278,7 @@ quejas ante la Procuraduría Federal del Consumidor (PROFECO).
 
 ## 9. Conservación de Documentos (CCom art. 49 + NOM-151-SCFI-2016)
 
-**El plazo lo fija el Código de Comercio, no la NOM.** El **CCom art. 49** obliga a conservar por **10 años** los documentos relacionados con la actividad mercantil. La **NOM-151-SCFI-2016** define los requisitos técnicos para que esa conservación tenga **valor probatorio** (constancia de conservación, hash, timestamping por un PSC) — no establece un plazo propio. Citar la NOM como fuente del plazo de 10 años es una inversión de la relación entre ambas normas.
+**El plazo lo fija el Código de Comercio, no la NOM.** El **CCom art. 49** obliga a conservar por un mínimo de **10 años** los originales de cartas, telegramas, mensajes de datos o cualesquiera otros documentos en que se consignen contratos, convenios o compromisos que den nacimiento a derechos y obligaciones. La **NOM-151-SCFI-2016** define los requisitos técnicos para que esa conservación tenga **valor probatorio** (constancia de conservación, hash, timestamping por un PSC); no fija la obligación de conservar; su numeral A.8.4.1 da a la constancia de conservación una vigencia mínima de 10 años. Citar la NOM como fuente del plazo de 10 años es una inversión de la relación entre ambas normas.
 
 ### Requisitos de Conservación
 
@@ -285,9 +286,9 @@ quejas ante la Procuraduría Federal del Consumidor (PROFECO).
 |-----------|-------|-----------|
 | Contratos aceptados (con timestamp) | 10 años | **CCom art. 49** |
 | Confirmaciones de compra | 10 años | **CCom art. 49** |
-| CFDIs emitidos | 5 años | CFF |
-| Comunicaciones contractuales | 5 años | LFPC |
-| Consentimientos (ARCO, privacidad) | 5 años post-relación | LFPDPPP |
+| CFDIs emitidos | 5 años | CFF art. 30 |
+| Comunicaciones que consignen contratos o compromisos | 10 años | **CCom art. 49** |
+| Datos personales cancelados (ARCO, privacidad) | Bloqueo por el plazo de prescripción de las acciones de la relación jurídica, luego supresión | LFPDPPP (cancelación ARCO) |
 | Logs de aceptación de T&C | 10 años | **CCom art. 49** (valor probatorio vía NOM-151) |
 
 ### Requisitos Técnicos
@@ -431,13 +432,13 @@ MEMBERSHIP AGREEMENT / ACUERDO DE MEMBRESÍA
 ### Legislación
 - [LFPC — Texto vigente](https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf)
 - [Código de Comercio — Título II, Libro II](https://www.diputados.gob.mx/LeyesBiblio/pdf/CCom.pdf)
-- [Código Civil Federal](https://www.diputados.gob.mx/LeyesBiblio/pdf/2_070121.pdf)
+- [Código Civil Federal](https://www.diputados.gob.mx/LeyesBiblio/pdf/CCF.pdf)
 - [DOF 12/12/2025 — Reforma Art. 76 Bis](https://www.dof.gob.mx/nota_detalle.php?codigo=5775999&fecha=12/12/2025)
-- [NOM-151-SCFI-2016](https://www.dof.gob.mx/nota_detalle.php?codigo=5478024&fecha=30/03/2017) — código DOF **5478024** (corregido 19-ago-2026; el 5476488 apuntaba a otra publicación). En vigor desde el **26-sep-2017**
+- [NOM-151-SCFI-2016](https://www.dof.gob.mx/nota_detalle.php?codigo=5478024&fecha=30/03/2017) — código DOF **5478024** (DOF 30-03-2017). En vigor desde el **26-sep-2017**
 - [Código de Comercio art. 49 — conservación 10 años](https://www.diputados.gob.mx/LeyesBiblio/pdf/CCom.pdf)
 
 ### Jurisprudencia
-- SCJN 1a./J. 93/2025 (Amparo Directo en Revisión 5069/2023) — T&C como contratos de adhesión
+- SCJN 1a./J. 93/2025 (11a.), registro digital 2030477, ADR 5069/2023: cláusula de sumisión a jurisdicción extranjera y acceso a la justicia (no verificada por script)
 
 ### Despachos legales
 - [Greenberg Traurig — Reformas LFPC Suscripciones](https://www.gtlaw.com/en/insights/2025/12/reformas-a-la-ley-federal-de-proteccion-al-consumidor)

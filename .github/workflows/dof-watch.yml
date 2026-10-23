@@ -1,0 +1,99 @@
+name: dof-watch
+
+# Daily DOF watcher. Writes only to the `digests` branch and to Issues; never to `main`.
+on:
+  schedule:
+    - cron: '0 14,23 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'DOF date as DD-MM-YYYY (empty = today, Mexico City)'
+        type: string
+        required: false
+        default: ''
+      create_issues:
+        description: 'Open issues for hits (false = seed run: digest and sat_seen.json only)'
+        type: boolean
+        required: false
+        default: true
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency: dof-watch
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: Ensure the digests branch exists
+        run: |
+          if [ -z "$(git ls-remote --heads origin digests)" ]; then
+            tree=$(git hash-object -t tree /dev/null)
+            commit=$(git -c user.name='dof-watch[bot]' \
+              -c user.email='dof-watch[bot]@users.noreply.github.com' \
+              commit-tree "$tree" -m "init digests")
+            git push origin "$commit:refs/heads/digests"
+          fi
+
+      - name: Check out digests
+        uses: actions/checkout@v4
+        with:
+          ref: digests
+          path: digests
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run watcher
+        id: run
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DATE: ${{ inputs.date }}
+          CREATE_ISSUES: ${{ inputs.create_issues }}
+          REPO: ${{ github.repository }}
+        run: |
+          set +e
+          args=(run --date "${DATE:-today}" --watchlist tools/dof-watch/watchlist.json --out-dir digests)
+          # Schedule runs have no inputs: only an explicit false disables issues.
+          if [ "$CREATE_ISSUES" != "false" ]; then
+            args+=(--create-issues "$REPO")
+          fi
+          python3 tools/dof-watch/dof_watch.py "${args[@]}"
+          rc=$?
+          echo "rc=$rc" >> "$GITHUB_OUTPUT"
+          echo "label=${DATE:-$(TZ=America/Mexico_City date +%d-%m-%Y)}" >> "$GITHUB_OUTPUT"
+
+      - name: Update stats
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: python3 tools/dof-watch/dof_watch.py stats --out-dir digests --repo "$REPO"
+
+      - name: Commit and push digests
+        if: ${{ !cancelled() }}
+        working-directory: digests
+        env:
+          LABEL: ${{ steps.run.outputs.label }}
+        run: |
+          git config user.name 'dof-watch[bot]'
+          git config user.email 'dof-watch[bot]@users.noreply.github.com'
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No digest changes."
+          else
+            git commit -m "digest: $LABEL"
+            git push origin HEAD:digests
+          fi
+
+      - name: Fail on outage
+        if: ${{ !cancelled() }}
+        env:
+          RC: ${{ steps.run.outputs.rc }}
+        run: exit "${RC:-1}"

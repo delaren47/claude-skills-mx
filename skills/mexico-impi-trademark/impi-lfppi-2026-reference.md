@@ -1,7 +1,8 @@
+Verified 2026-10-23
+
 # IMPI / LFPPI — Referencia Detallada
 
-**Fecha de investigacion original:** 23 de febrero de 2026
-**Reverificado contra fuente primaria:** 19 de agosto de 2026 (LFPPI texto vigente, ultima reforma DOF 03-04-2026, diputados.gob.mx/LeyesBiblio; Acuerdo de tarifas IMPI DOF 15-03-2024)
+**Fuentes primarias:** LFPPI texto vigente, ultima reforma DOF 03-04-2026 (diputados.gob.mx/LeyesBiblio); Acuerdo por el que se da a conocer la tarifa…, DOF 23-08-1995; última modificación DOF 15-03-2024, nota SIDOF 5720420; sin modificaciones en DOF al 23-10-2026.
 **Aplica a:** Ejemplo ilustrativo — proteccion de marca para un directorio de salud en linea (marca hipotetica)
 
 ---
@@ -19,7 +20,7 @@ El **Reglamento** vigente es el publicado en el **DOF el 28 de abril de 2026, en
 | **Art. 170** | Derecho al uso exclusivo mediante registro ante IMPI | Base de la titularidad |
 | **Art. 171** | Definicion de marca: signo perceptible que se representa de manera que permita determinar el objeto claro y preciso de la proteccion | Que puede ser marca |
 | **Art. 172** | Signos que pueden constituir marca — **11 fracciones** (posicion, movimiento y multimedia adicionadas DOF 03-04-2026) | Seleccion de tipo |
-| **Art. 173** | **23 causales** de irregistrabilidad (mezcla absolutas y relativas); fr. XXIII adicionada DOF 03-04-2026 | Analisis de viabilidad |
+| **Art. 173** | **24 fracciones** (I a XXIII más I Bis) de irregistrabilidad (mezcla absolutas y relativas); frs. I Bis y XXIII adicionadas DOF 03-04-2026 | Analisis de viabilidad |
 | **Art. 174** | Prohibicion de usar marca registrada ajena en nombre comercial, denominacion o razon social | Conflicto societario |
 | **Art. 175** | Limites de los efectos del registro — **fr. I: usuario previo de buena fe** (puede solicitar el registro dentro de 5 anos de la publicacion, previa nulidad) | Defensa del usuario previo |
 | **Art. 178** | Vigencia de 10 anos renovable + **protesta de decir verdad al solicitar Y al renovar** (parrafo reformado DOF 03-04-2026) | Vigencia y declaracion |
@@ -39,11 +40,12 @@ El **Reglamento** vigente es el publicado en el **DOF el 28 de abril de 2026, en
 
 > **Errores de cita que esta referencia corrige (auditoria 19-ago-2026):** la oposicion es el **Art. 221**, no el "221 bis" (que no existe). La declaracion trienal de uso es el **Art. 233**, no el 237 (ese es la renovacion). El consentimiento expreso entre titulares es el **Art. 173, penultimo parrafo**, no el Art. 175. La ventana de nulidad por uso previo es de **5 anos**, no de 3.
 
-### Art. 173 — Causales de irregistrabilidad (23 fracciones, texto vigente)
+### Art. 173 — Causales de irregistrabilidad (24 fracciones: I a XXIII más I Bis, texto vigente)
 
 | Fraccion | Causal | Tipo | Aplica al ejemplo |
 |----------|--------|------|---------------------|
-| I / I Bis | Nombres tecnicos o de uso comun, genericos; o palabras, denominaciones, frases, sonidos o elementos figurativos que carezcan de distintividad | Absoluta | Posible por descriptividad global |
+| I | Nombres tecnicos o de uso comun, genericos o usuales | Absoluta | Posible por descriptividad global |
+| I Bis | Palabras, denominaciones, frases, sonidos o elementos figurativos que carezcan de distintividad (**adicionada DOF 03-04-2026**) | Absoluta | Posible por descriptividad global |
 | II | Formas 3D o disenos industriales de dominio publico, de uso comun, o sin distintividad | Absoluta | No aplica |
 | III | Hologramas de dominio publico o sin distintividad | Absoluta | No aplica |
 | **IV** | **Signos descriptivos** de los productos o servicios (especie, calidad, cantidad, composicion, destino, valor, lugar de origen, epoca de produccion) | Absoluta | **Si** — "Expats" describe al publico/servicio |
@@ -69,11 +71,11 @@ El **Reglamento** vigente es el publicado en el **DOF el 28 de abril de 2026, en
 
 **Parrafos finales del Art. 173 (verbatim resumido):**
 
-1. **Distintividad adquirida.** "Lo dispuesto por las fracciones I, II, III, IV, V y VI del presente articulo no resultara aplicable, cuando derivado del uso que se hubiese hecho en el comercio en los productos o servicios para los cuales se solicita la marca, esta haya adquirido un caracter distintivo en territorio nacional, de conformidad con lo dispuesto por el Reglamento de esta Ley." No se reconoce distintividad adquirida en la forma 3D inherente a la naturaleza o funcionalidad.
+1. **Distintividad adquirida.** "Lo dispuesto por las fracciones I, II, III, IV, V y VI del presente articulo no resultara aplicable, cuando derivado del uso que se hubiese hecho en el comercio en los productos o servicios para los cuales se solicita la marca, esta haya adquirido un caracter distintivo en territorio nacional, de conformidad con lo dispuesto por el Reglamento de esta Ley." No se reconoce distintividad adquirida en la forma 3D inherente a la naturaleza o funcionalidad. La fracción I Bis no está en esa lista.
 2. **Consentimiento expreso (penultimo parrafo).** "Lo dispuesto por las fracciones XVIII, XIX y XX del presente articulo no resultara aplicable respecto a las marcas semejantes en grado de confusion o identicas para productos o servicios similares, cuando se exhiba el consentimiento expreso y por escrito, en terminos del Reglamento de esta Ley."
 3. **Ultimo parrafo.** Para las fracciones XVIII y XX quedan incluidos los registros o publicaciones a que se refiere el Art. 237.
 
-> **Consecuencia practica:** la fraccion X (geograficos) **no** admite distintividad adquirida. Una denominacion que apoya su registrabilidad en secondary meaning solo salva las fracciones I a VI.
+> **Consecuencia practica:** la fraccion X (geograficos) **no** admite distintividad adquirida. Una denominacion que apoya su registrabilidad en secondary meaning solo salva las fracciones I, II, III, IV, V y VI; no la I Bis ni la X.
 
 ### Reforma LFPPI — **ley vigente** (DOF 03-04-2026)
 
@@ -82,13 +84,12 @@ Lo que en versiones anteriores de esta guia figuraba como "iniciativa 2025 no ap
 | Cambio | Fundamento | Efecto |
 |--------|-----------|--------|
 | Nuevos tipos de signo: **posicion, movimiento, multimedia**; trade dress reformado | Art. 172 fr. VII-XI | El catalogo de signos registrables pasa a 11 fracciones |
-| Nueva causal: **patrimonio cultural indigena y afromexicano** | Art. 173 fr. XXIII | 23 causales en total |
+| Nueva causal: **patrimonio cultural indigena y afromexicano** | Art. 173 fr. XXIII | 24 fracciones en total (I a XXIII más I Bis) |
 | Nueva causal de falta de distintividad autonoma | Art. 173 fr. I Bis | Separa "generico" de "sin distintividad" |
 | **Protesta de decir verdad sobre la oferta**, al solicitar **y al renovar** | Art. 178, segundo parrafo | Base para nulidad si la autoridad determina violacion legal |
 | **Plazo maximo de resolucion de 5 meses** cuando no hay requerimientos ni oposicion | Art. 229 Bis (adicionado) | Certeza de plazo; aplica a marcas, avisos y nombres comerciales |
 | Resolucion en plazo que **no podra exceder de 5 meses** en la via con oposicion | Art. 229 (reformado) | Limita la duracion del contradictorio |
 | **Suspension de tramite** ampliada y con carga de manifestarla por escrito | Art. 228 (reformado, fr. II adicionada) | Si no se manifiesta, el tramite continua |
-| Nulidad y caducidad **parciales** consolidadas | Arts. 258 fr. II y IV, 260 | Se puede anular/caducar solo algunos productos o servicios |
 | Nuevo **Reglamento** | DOF 28-04-2026, en vigor 22-07-2026 | 202 articulos; expediente y notificaciones electronicas |
 
 ---
@@ -154,40 +155,41 @@ Lo que en versiones anteriores de esta guia figuraba como "iniciativa 2025 no ap
 
 ---
 
-## 3. Tarifas IMPI — Acuerdo DOF 15-03-2024 (vigente)
+## 3. Tarifas IMPI — Acuerdo de tarifa (última modificación DOF 15-03-2024)
 
-Fuente primaria: *Acuerdo por el que se da a conocer la tarifa por los servicios que presta el Instituto Mexicano de la Propiedad Industrial*, ultima modificacion publicada en el DOF el **15 de marzo de 2024**. Montos **pre-IVA**, verificados el **19 de agosto de 2026**.
+Fuente primaria: *Acuerdo por el que se da a conocer la tarifa por los servicios que presta el Instituto Mexicano de la Propiedad Industrial*, DOF 23-08-1995; ultima modificacion publicada en el DOF el **15 de marzo de 2024** (nota SIDOF 5720420), sin modificaciones posteriores en DOF al 23-10-2026. Esa modificacion no fija montos: solo adiciona la disposicion DÉCIMA PRIMERA. Cada monto se cita a la nota DOF que lo fijo (columna Fuente; notas en https://sidof.segob.gob.mx/dof/sidof/notas/nota/<nota>). Montos **pre-IVA**, verificados el **23 de octubre de 2026**.
 
-| Articulo | Concepto (texto del Acuerdo) | Tarifa MXN |
-|----------|------------------------------|-----------|
-| **14 a** | Por el estudio de una solicitud nacional para el registro de una marca, aviso comercial o nombre comercial hasta la conclusion del tramite o, en su caso, la expedicion del titulo | \$2,695.18 |
-| **14 b** | Por el estudio de la oposicion a una solicitud de registro de marca, aviso o nombre comercial, por cada uno | \$3,704.09 |
-| **14 c** | Por la renovacion de un registro de marca, aviso comercial o nombre comercial nacional, por cada clase | \$2,597.77 |
-| **14 d** | Por la declaracion de uso de marca | \$985.67 |
-| **14 e** | Por el estudio de la solicitud de la estimacion o declaracion de marca notoriamente conocida | \$2,599.22 |
-| **14 f** | Por el estudio de la solicitud de la estimacion o declaracion de marca famosa | \$2,521.09 |
-| **14 g** | Por la emision de la declaracion de marca notoriamente conocida, por cada clase en la que se reconoce | \$975.34 |
-| **16** | Por el estudio y tramite de una solicitud de declaracion administrativa de nulidad, caducidad, cancelacion e infraccion | \$1,348.51 |
-| **28** | Por el estudio y reconocimiento de cada derecho de prioridad | \$1,066.17 |
-| **30** | Por solicitud de prorroga, por cada mes | \$139.83 |
-| **31** | Por el cumplimiento de un requerimiento del Instituto dentro de los plazos adicionales de dos meses previstos en la Ley, por cada mes adicional | \$154.00 |
-| **33** | Por cada inscripcion de la transformacion juridica de personas morales | \$71.08 |
+| Articulo | Concepto (texto del Acuerdo) | Tarifa MXN | Fuente (DOF, nota SIDOF) |
+|----------|------------------------------|-----------|--------------------------|
+| **14 a** | Por el estudio de una solicitud nacional para el registro de una marca, aviso comercial o nombre comercial hasta la conclusion del tramite o, en su caso, la expedicion del titulo | \$2,695.18 | DOF 07-08-2018, nota 5534056 |
+| **14 b** | Por el estudio de la oposicion a una solicitud de registro de marca, aviso o nombre comercial, por cada uno | \$3,704.09 | DOF 07-08-2018, nota 5534056 |
+| **14 c** | Por la renovacion de un registro de marca, aviso comercial o nombre comercial nacional, por cada clase | \$2,597.77 | DOF 07-08-2018, nota 5534056 |
+| **14 d** | Por la declaracion de uso de marca | \$985.67 | DOF 07-08-2018, nota 5534056 |
+| **14 e** | Por el estudio de la solicitud de la estimacion o declaracion de marca notoriamente conocida | \$2,599.22 | *verificar antes de usar* (nota DOF no localizada) |
+| **14 f** | Por el estudio de la solicitud de la estimacion o declaracion de marca famosa | \$2,521.09 | *verificar antes de usar* (nota DOF no localizada) |
+| **14 g** | Por la emision de la declaracion de marca notoriamente conocida, por cada clase en la que se reconoce | \$975.34 | *verificar antes de usar* (nota DOF no localizada) |
+| **16** | Por el estudio y tramite de una solicitud de declaracion administrativa de nulidad, caducidad, cancelacion e infraccion | \$1,348.51 | DOF 06-01-2021, nota 5609525 |
+| **28** | Por el estudio y reconocimiento de cada derecho de prioridad | \$1,066.17 | DOF 30-11-2015, nota 5417972 |
+| **30** | Por solicitud de prorroga, por cada mes | \$139.83 | DOF 30-11-2015, nota 5417972 |
+| **31** | Por el cumplimiento de un requerimiento del Instituto dentro de los plazos adicionales de dos meses previstos en la Ley, por cada mes adicional | \$154.00 | DOF 30-11-2015, nota 5417972 |
+| **33** | Por cada inscripcion de la transformacion juridica de personas morales | \$71.08 | DOF 30-11-2015, nota 5417972 |
 
 ### "Correccion / modificacion": tres tarifas distintas — identificar el acto exacto
 
 La etiqueta generica "correccion/modificacion" **no corresponde a una sola tarifa**. Segun el acto, aplica uno de estos tres articulos:
 
-| Articulo | Concepto (texto del Acuerdo) | Tarifa MXN |
-|----------|------------------------------|-----------|
-| **29** | Por la revision de cada reposicion de documentacion, complementacion de informacion faltante, aclaracion o subsanacion de omisiones, asi como por enmiendas voluntarias (no comprendidos en los actos enunciados en el articulo 13 de esta tarifa), por cada uno de los actos mencionados. Queda incluido el desahogo a una prevencion relacionada con los impedimentos legales para el otorgamiento de un registro | \$325.77 |
-| **32** | Por la inscripcion de la transmision o gravamen de un derecho; por la inscripcion o cancelacion de inscripcion de una licencia contractual de explotacion o uso, o de su modificacion; **por el cambio de nombre, denominacion o razon social** del solicitante o titular; por el estudio de una solicitud de inscripcion de una franquicia — por cada acto y por cada patente, registro, publicacion o autorizacion | \$331.70 |
-| **34** | Por la toma de nota del **cambio de domicilio** del titular, del domicilio para oir y recibir notificaciones, o de la ubicacion del establecimiento industrial, comercial o de servicios; asi como por el **acreditamiento o revocacion del representante legal** — por cada acto y por cada expediente involucrado | \$119.20 |
+| Articulo | Concepto (texto del Acuerdo) | Tarifa MXN | Fuente (DOF, nota SIDOF) |
+|----------|------------------------------|-----------|--------------------------|
+| **29** | Por la revision de cada reposicion de documentacion, complementacion de informacion faltante, aclaracion o subsanacion de omisiones, asi como por enmiendas voluntarias (no comprendidos en los actos enunciados en el articulo 13 de esta tarifa), por cada uno de los actos mencionados. Queda incluido el desahogo a una prevencion relacionada con los impedimentos legales para el otorgamiento de un registro | \$325.77 | DOF 06-01-2021, nota 5609525 |
+| **32** | Por la inscripcion de la transmision o gravamen de un derecho; por la inscripcion o cancelacion de inscripcion de una licencia contractual de explotacion o uso, o de su modificacion; **por el cambio de nombre, denominacion o razon social** del solicitante o titular; por el estudio de una solicitud de inscripcion de una franquicia — por cada acto y por cada patente, registro, publicacion o autorizacion | \$331.70 | DOF 26-04-2018, nota 5520840 |
+| **34** | Por la toma de nota del **cambio de domicilio** del titular, del domicilio para oir y recibir notificaciones, o de la ubicacion del establecimiento industrial, comercial o de servicios; asi como por el **acreditamiento o revocacion del representante legal** — por cada acto y por cada expediente involucrado | \$119.20 | DOF 12-05-2023, nota 5688604 |
 
-> Enmienda voluntaria o subsanacion → **29**. Cambio de titularidad, licencia o razon social → **32**. Cambio de domicilio o representante → **34**. Cotizar sin identificar el acto produce un presupuesto equivocado por un factor de hasta 2.7x.
+> Enmienda voluntaria o subsanacion → **29**. Cambio de titularidad, licencia o razon social → **32**. Cambio de domicilio o representante → **34**. Cotizar sin identificar el acto produce un presupuesto equivocado por un factor de hasta ~2.8x.
 
 ### Descuentos
 
-- **Marca en Linea — 10%.** Disposicion **NOVENA** del Acuerdo: "Cuando la prestacion de los servicios a que se refiere el articulo 14 a de esta Tarifa, se lleve a cabo a traves del Sistema Marca en Linea, procedera el descuento de 10% sobre dicha cuota." Aplica **solo al art. 14 a** → \$2,425.66 + IVA. Queda incluida la presentacion en ventanilla de solicitudes de signos holograficos, sonoros, olfativos, de pluralidad de elementos o sus combinaciones.
+- **Marca en Linea — 10%.** Disposicion **NOVENA** del Acuerdo: "Cuando la prestacion de los servicios a que se refiere el articulo 14 a de esta Tarifa, se lleve a cabo a traves del Sistema Marca en Linea, procedera el descuento de 10% sobre dicha cuota." Aplica **solo al art. 14 a** → \$2,425.66 + IVA. *Verificar antes de usar*: el texto de la NOVENA se leyo solo en la compilacion del IMPI; su nota DOF no se ha localizado. Queda incluida la presentacion en ventanilla de solicitudes de signos holograficos, sonoros, olfativos, de pluralidad de elementos o sus combinaciones.
+- **DÉCIMA PRIMERA** (DOF 15-03-2024, nota SIDOF 5720420): reducción de 50% en arts. 14 a–14 d para marcas colectivas o de certificación de asociaciones cuyos integrantes pertenezcan en su totalidad a pueblos o comunidades indígenas o afromexicanas, con constancia de pertenencia.
 - **Campanas de precio diferencial** ("Marcas para el Bienestar" y similares, descuentos de hasta 90%): operan por **convocatoria con ventana limitada**. **A 19-ago-2026 no hay ventana abierta.** Verificar convocatoria vigente antes de asumir cualquier descuento de campana.
 
 ### Conversion a USD
@@ -207,7 +209,7 @@ Las tarifas son en pesos. Cualquier equivalente en USD debe publicarse con **tip
 | **Marca en Linea** | https://marcaenlinea.impi.gob.mx | Presentacion de solicitudes con 10% de descuento (art. 14 a). **Sustituye a `eimpi.impi.gob.mx`, que ya no responde** |
 | **Gaceta de PI / SIGA** | https://siga.impi.gob.mx | Publicaciones oficiales y consulta de expedientes |
 | **ClasNiza** | https://clasniza.impi.gob.mx | Clasificador oficial de productos y servicios, NCL(13-2026) |
-| **Tarifas IMPI** | https://www.gob.mx/impi/acciones-y-programas/servicios-que-ofrece-el-impi-tarifas-215115 | Tarifa vigente por servicio |
+| **Tarifas IMPI** | https://www.gob.mx/impi/acciones-y-programas/servicios-que-ofrece-el-impi-tarifas-215115 | Consulta, no fuente primaria (las notas DOF de cada monto estan en la seccion 3) |
 | **Portal IMPI** | https://www.gob.mx/impi | Informacion general |
 
 ### MARCANET vs MARCia — cuando usar cual
@@ -285,7 +287,7 @@ Las tarifas son en pesos. Cualquier equivalente en USD debe publicarse con **tip
 
 ### Via 1: Distintividad adquirida (secondary meaning)
 
-Desde la LFPPI 2020, Mexico reconoce la **distintividad adquirida** por uso (Art. 173, parrafo aplicable a las fracciones **I, II, III, IV, V y VI**):
+Desde la LFPPI 2020, Mexico reconoce la **distintividad adquirida** por uso (Art. 173, parrafo aplicable a las fracciones **I, II, III, IV, V y VI**; no a la I Bis):
 
 - **Requisito:** demostrar que el publico identifica la marca como indicador de origen, no como descripcion, **en territorio nacional**, conforme al Reglamento
 - **Evidencia necesaria:** encuestas de consumidor, ventas significativas, publicidad extensa, cobertura mediatica
@@ -597,8 +599,9 @@ Todas las URLs verificadas el 19 de agosto de 2026.
 - [Marca en Linea — Presentacion de solicitudes](https://marcaenlinea.impi.gob.mx)
 - [Gaceta de la Propiedad Industrial / SIGA](https://siga.impi.gob.mx)
 - [ClasNiza — Clasificador oficial NCL(13-2026)](https://clasniza.impi.gob.mx)
-- [Tarifa por los servicios que presta el IMPI](https://www.gob.mx/impi/acciones-y-programas/servicios-que-ofrece-el-impi-tarifas-215115)
-- [Acuerdo de tarifas — PDF, DOF 15-03-2024](https://www.gob.mx/cms/uploads/attachment/file/959396/1._Acuerdo.Tarifa_15.03.24.pdf)
+- [Tarifa por los servicios que presta el IMPI — consulta, no fuente primaria](https://www.gob.mx/impi/acciones-y-programas/servicios-que-ofrece-el-impi-tarifas-215115)
+- [Compilacion del Acuerdo de tarifas — PDF del IMPI, sin caracter oficial](https://www.gob.mx/cms/uploads/attachment/file/959396/1._Acuerdo.Tarifa_15.03.24.pdf)
+- Acuerdo de tarifa, notas SIDOF (fuente primaria de cada monto): [5720420, DOF 15-03-2024](https://sidof.segob.gob.mx/dof/sidof/notas/nota/5720420) · [5534056, DOF 07-08-2018](https://sidof.segob.gob.mx/dof/sidof/notas/nota/5534056) · [5609525, DOF 06-01-2021](https://sidof.segob.gob.mx/dof/sidof/notas/nota/5609525) · [5520840, DOF 26-04-2018](https://sidof.segob.gob.mx/dof/sidof/notas/nota/5520840) · [5688604, DOF 12-05-2023](https://sidof.segob.gob.mx/dof/sidof/notas/nota/5688604) · [5417972, DOF 30-11-2015](https://sidof.segob.gob.mx/dof/sidof/notas/nota/5417972)
 
 ### Texto legal (fuente primaria)
 

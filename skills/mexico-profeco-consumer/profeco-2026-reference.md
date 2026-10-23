@@ -1,7 +1,7 @@
+Verified 2026-10-23
+
 # PROFECO 2026 — Referencia Detallada
 
-**Fecha de investigación:** 19 de febrero de 2026
-**Reverificado:** 19 de agosto de 2026, contra el texto vigente de la LFPC (DOF 12-12-2025) y el Acuerdo de montos DOF 23-12-2025
 **Aplica a:** Directorio de salud en línea para expatriados
 
 ---
@@ -10,15 +10,15 @@
 
 ### Decreto DOF 12/12/2025
 
-Reforma al Artículo 76 Bis de la LFPC, agregando fracciones VIII y IX. Publicada en el Diario Oficial de la Federación el 12 de diciembre de 2025. **Vigente inmediatamente.**
+Reforma al Artículo 76 Bis de la LFPC, agregando fracciones VIII y IX. Publicada en el Diario Oficial de la Federación el 12 de diciembre de 2025. **Vigente desde el 13-12-2025** (entra en vigor el día siguiente de su publicación, Transitorio Único).
 
 ### Fracción VIII — Cobros Recurrentes
 
 Antes de la contratación de cualquier servicio con cobro recurrente, el proveedor debe:
-- Informar de manera clara y destacada la existencia de cobros recurrentes
+- Informar de manera clara, destacada y accesible la existencia de cobros recurrentes
 - Detallar el monto exacto, la frecuencia y la fecha de cada cobro
 - Obtener el consentimiento **expreso e informado** del consumidor
-- El consentimiento no puede ser pre-marcado ni inferido
+- Lectura de "expreso e informado" (no es texto de la ley): el consentimiento no puede ser pre-marcado ni inferido
 - Cuando el contrato prevea **renovación automática**: avisar al consumidor con al menos **5 días naturales de anticipación** a cada renovación
 - Durante esa ventana de aviso, el consumidor puede cancelar **sin penalización**
 
@@ -95,10 +95,12 @@ Para las fracciones II y III procede garantía de audiencia (Art. 123). Último 
 
 ### Ausencia de Safe Harbor Mexicano
 
-México **no tiene** legislación interna de "safe harbor" para intermediarios digitales comparable a:
+México **no tiene** legislación interna general de "safe harbor" para intermediarios digitales comparable a:
 - Section 230 (EE.UU.)
 - Marco Civil da Internet (Brasil)
 - Digital Services Act (UE)
+
+Sí existe uno sectorial para derechos de autor: LFDA arts. 114 Septies–114 Octies (notice and takedown).
 
 ### T-MEC Artículo 19.17 — Protección de Intermediarios
 
@@ -137,6 +139,7 @@ Para compras realizadas fuera del establecimiento físico (incluye compras en l�
 - Contrato se perfecciona **5 días hábiles** después de la entrega o firma
 - Durante ese período: revocación **sin responsabilidad alguna**
 - Para servicios: no aplica si prestación es 10 días hábiles o menos desde la orden
+- Alcance (Art. 2 fr. I): protege al consumidor final. Quien adquiere el servicio para integrarlo a la prestación de servicios a terceros (p. ej. una clínica que compra una membresía) es consumidor sólo para los arts. 99 y 117 (quejas y conciliación; operaciones ≤ \$760,889.82 en 2026; personas morales sólo si son microempresas). Ofrecer retracto a proveedores es política comercial, no obligación de la LFPC.
 
 ### Propuesta Art. 56 Bis (PENDIENTE)
 
@@ -152,8 +155,8 @@ Iniciativa presentada el **30 de septiembre de 2025** (Sistema de Información L
 
 PROFECO cuenta con el departamento **C.A.R.E.** (Conciliation Services to Foreign Residents):
 - Atiende controversias de ciudadanos extranjeros en México
-- Email: extranjeros@profeco.gob.mx (residentes)
-- Email: turista@profeco.gob.mx (turistas)
+- Email: extranjeros@profeco.gob.mx (residentes) (*verificar antes de usar*)
+- Email: turista@profeco.gob.mx (turistas) (*verificar antes de usar*)
 
 ### Jurisdicción
 
@@ -162,7 +165,7 @@ PROFECO cuenta con el departamento **C.A.R.E.** (Conciliation Services to Foreig
 
 ### Excepción importante
 
-PROFECO **no tiene jurisdicción** sobre servicios profesionales médicos directos (médicos, dentistas, abogados). Pero **SÍ** sobre el servicio del directorio (publicidad, membresía, comercio electrónico).
+La LFPC excluye los servicios profesionales que no sean de carácter mercantil (art. 5). Clínicas y hospitales privados que operan como negocio sí están bajo la LFPC. PROFECO **SÍ** tiene jurisdicción, además, sobre el servicio del directorio (publicidad, membresía, comercio electrónico).
 
 ---
 
@@ -175,12 +178,12 @@ Montos vigentes 2026 conforme al Acuerdo publicado en el **DOF el 23-12-2025**. 
 | Infracción | Rango | Artículo |
 |------------|-------|----------|
 | Publicidad engañosa (Art. 32) — ordinaria | \$380.44 – \$1,217,423.72 MXN | **Art. 126** (catch-all) |
-| Publicidad engañosa **grave** | \$228,266.96 – \$6,391,474.56 MXN + clausura ≤ 90 días | Art. 128 Ter · clausura 128 Bis ¶1 |
+| Publicidad engañosa **grave** | \$228,266.96 – \$6,391,474.56 MXN + clausura ≤ 90 días | Art. 128 Bis ¶1 (multa y clausura); gravedad: Art. 128 Ter fr. VI |
 | Grave + reincidencia | Hasta **10% de los ingresos brutos anuales** | Art. 128 Bis ¶2 |
 | Incumplir Art. 76 Bis (suscripciones) | \$1,093.02 – \$4,274,960.73 MXN | **Art. 128** |
-| Infracciones del Art. 127 | \$760.89 – \$2,434,847.42 MXN | Art. 127 |
+| Cláusulas abusivas (Art. 90) y desacato a órdenes sobre publicidad (Art. 35), entre otros | \$760.89 – \$2,434,847.42 MXN | Art. 127 |
 | Reincidencia | Hasta el **doble** de la multa + arresto ≤ 36 h | Art. 129 |
-| Incumplimiento persistente | Hasta \$15,217.79 MXN **por día**, máx. 180 días | **Art. 25 fr. IV** |
+| Medida de apremio: desobedecer un mandato de PROFECO (previo apercibimiento) | Hasta \$15,217.79 MXN **por día**, máx. 180 días | **Art. 25 fr. IV** |
 | Tope agregado por un mismo hecho | \$12,782,949.06 MXN | Art. 133 ¶2 |
 
 Incremento 2025→2026: 3.8%. Es **actualización por inflación conforme al Art. 129 Bis**, no una indexación a la UMA.
@@ -189,7 +192,7 @@ Incremento 2025→2026: 3.8%. Es **actualización por inflación conforme al Art
 
 | Caso | Multa | Motivo |
 |------|-------|--------|
-| Uber / Easy Taxi / Cabify (**julio 2018**) | **\$6.484 millones de pesos en total** — Uber \$3,974,000 · Easy Taxi ≈ \$1,810,000 · Cabify \$700,000 | Cláusulas abusivas + publicidad engañosa |
+| Uber / Easy Taxi / Cabify (**julio 2018**) | **\$6.484 millones de pesos en total** — Uber \$3,974,000 · Easy Taxi ≈ \$1,810,000 · Cabify \$700,000 (fecha y desglose: *verificar antes de usar*) | Cláusulas abusivas + publicidad engañosa |
 | Cargos recurrentes / cancelación difícil | ~8,000 quejas acumuladas al cierre de 2025 (PROFECO) | Prácticas abusivas en suscripciones |
 
 ### Tendencias 2024-2026
@@ -261,7 +264,7 @@ for your needs before receiving medical services.
 
 ### Legislación
 - [LFPC — Texto vigente (Cámara de Diputados)](https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPC.pdf)
-- [DOF 12/12/2025 — Decreto reforma Art. 76 Bis](https://www.dof.gob.mx/nota_detalle.php?codigo=5775999&fecha=12/12/2025)
+- [DOF 12/12/2025 — Decreto reforma Art. 76 Bis](https://dof.gob.mx/nota_detalle.php?codigo=5775999&fecha=12/12/2025) · [SIDOF nota 5775999](https://sidof.segob.gob.mx/dof/sidof/notas/nota/5775999)
 
 ### Despachos legales
 - [Greenberg Traurig — Reformas LFPC Suscripciones (Dic 2025)](https://www.gtlaw.com/en/insights/2025/12/reformas-a-la-ley-federal-de-proteccion-al-consumidor)
@@ -275,7 +278,7 @@ for your needs before receiving medical services.
 
 ### Institucional
 - [PROFECO — Portal oficial](https://www.gob.mx/profeco)
-- [PROFECO — Publicidad Engañosa](https://www.profeco.gob.mx/juridico/Documentos/SSC/Normatividad_TomoIV/Publicidad%20enga%C3%B1osa.pdf)
+- Publicidad engañosa: LFPC art. 32 (texto vigente, ver Legislación)
 - [PROFECO — Sanciones Uber/Cabify/Easy Taxi](https://www.gob.mx/profeco/prensa/profeco-impone-sanciones-hasta-por-6-484-millones-de-pesos-a-uber-easy-taxi-y-cabify-por-usar-clausulas-abusivas-y-publicidad-enganosa)
 - [Distintivo Digital PROFECO](https://distintivodigital.profeco.gob.mx/)
 - [Concilianet — PROFECO](https://concilianet.profeco.gob.mx/)
