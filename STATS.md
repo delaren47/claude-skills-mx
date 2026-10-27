@@ -2,7 +2,7 @@
 
 | month | runs | notes read | hits | outages |
 |---|---|---|---|---|
-| 2026-10 | 2 | 150 | 0 | 0 |
+| 2026-10 | 3 | 310 | 12 | 0 |
 
 ## Closed issues by outcome
 
